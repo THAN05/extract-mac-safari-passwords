@@ -1,0 +1,2668 @@
+<!DOCTYPE html>  
+<html lang="US">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>README</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style id="mkstylesheet">
+#wrapper{color:#24292e;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';margin:0;text-size-adjust:100%}#wrapper aside,#wrapper article,#wrapper details,#wrapper figcaption,#wrapper figure,#wrapper footer,#wrapper header,#wrapper hgroup,#wrapper main,#wrapper menu,#wrapper nav,#wrapper section,#wrapper summary{display:block}#wrapper audio,#wrapper canvas,#wrapper progress,#wrapper video{display:inline-block;vertical-align:baseline}#wrapper audio:not([controls]){display:none;height:0}#wrapper [hidden],#wrapper template{display:none}#wrapper a{background-color:transparent}#wrapper a:active,#wrapper a:hover{outline:0}#wrapper abbr[title]{border-bottom:1px dotted}#wrapper b,#wrapper strong{font-weight:bold}#wrapper dfn{font-style:italic}#wrapper mark{background:#ff0;color:#000}#wrapper small{font-size:80%}#wrapper sub,#wrapper sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}#wrapper sup{top:-.5em}#wrapper sub{bottom:-.25em}#wrapper img{border:0}#wrapper svg:not(:root){overflow:hidden}#wrapper figure{margin:1em 40px}#wrapper hr{box-sizing:content-box;height:0}#wrapper pre{overflow:auto}#wrapper code,#wrapper kbd,#wrapper pre,#wrapper samp{font-family:monospace, monospace;font-size:1em}#wrapper button,#wrapper input,#wrapper optgroup,#wrapper select,#wrapper textarea{color:inherit;font:inherit;margin:0}#wrapper button{overflow:visible}#wrapper button,#wrapper select{text-transform:none}#wrapper button,#wrapper input[type='button'],#wrapper input[type='reset'],#wrapper input[type='submit']{-webkit-appearance:button;cursor:pointer}#wrapper button[disabled]{cursor:default}#wrapper button::-moz-focus-inner,#wrapper input::-moz-focus-inner{border:0;padding:0}#wrapper input{line-height:normal}#wrapper input[type='checkbox'],#wrapper input[type='radio']{box-sizing:border-box;padding:0}#wrapper input[type='number']::-webkit-inner-spin-button,#wrapper input[type='number']::-webkit-outer-spin-button{height:auto}#wrapper input[type='search']{-webkit-appearance:textfield;box-sizing:content-box}#wrapper input[type='search']::-webkit-search-cancel-button,#wrapper input[type='search']::-webkit-search-decoration{-webkit-appearance:none}#wrapper fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}#wrapper legend{border:0;padding:0}#wrapper textarea{overflow:auto}#wrapper optgroup{font-weight:bold}#wrapper table{border-collapse:collapse;border-spacing:0}#wrapper *{box-sizing:border-box}#wrapper input,#wrapper select,#wrapper textarea,#wrapper button{font:14px/21px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'}#wrapper body{font:14px/21px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';color:#333;background-color:#fff}#wrapper a{color:#4078c0;text-decoration:none}#wrapper a:hover,#wrapper a:active{text-decoration:underline}#wrapper hr,#wrapper .rule{background:transparent;border:0;border-bottom:1px solid #ddd;height:0;margin:15px 0;overflow:hidden}#wrapper hr:before,#wrapper .rule:before{content:'';display:table}#wrapper hr:after,#wrapper .rule:after{clear:both;content:'';display:table}#wrapper h1,#wrapper h2,#wrapper h3,#wrapper h4,#wrapper h5,#wrapper h6{font-weight:600;line-height:1.1;margin:24px 0 16px;padding:0}#wrapper h1,#wrapper h2{border-bottom:1px solid #eaecef}#wrapper h1{font-size:32px;line-height:40px;margin:0 0 16px;padding:0 0 9.600000381469727px}#wrapper h2{font-size:24px;line-height:30px;padding:0 0 7.199999809265137px}#wrapper h3{font-size:20px;line-height:25px}#wrapper h4{font-size:16px;line-height:20px;margin:24px 0 16px;padding:0}#wrapper h5{font-size:14px;line-height:17px}#wrapper h6{font-size:13.600000381469727px;line-height:17px}#wrapper small{font-size:90%}#wrapper blockquote{margin:0}#wrapper ol ol,#wrapper ul ol{list-style-type:lower-roman}#wrapper ul ul ol,#wrapper ul ol ol,#wrapper ol ul ol,#wrapper ol ol ol{list-style-type:lower-alpha}#wrapper dd{margin-left:0}#wrapper tt,#wrapper code,#wrapper pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace}#wrapper pre{background-color:#f6f8fa;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px;margin-top:0;margin-bottom:0}#wrapper{-webkit-font-smoothing:antialiased;background:#fff;border:solid 1px #dddddd !important;border-radius:3px;color:#333;font:14px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';line-height:1.6;padding:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}#wrapper{background-color:#fff;font-size:16px;line-height:1.6;margin:15px;padding:30px}#wrapper>*:first-child{margin-top:0 !important}#wrapper>*:last-child{margin-bottom:0 !important}@media screen{#wrapper{border:solid 1px #ddd}}p,blockquote,ul,ol,dl,table,pre{margin-bottom:16px}hr{height:4px;padding:0;margin:16px 0;background-color:#e7e7e7;border:0 none}ul,ol{padding-left:2.8rem}ul.no-list,ol.no-list{padding:0;list-style-type:none}ul ul,ul ol{margin-top:0;margin-bottom:0}ol ol,ol ul{margin-top:0;margin-bottom:0}li>p{margin-bottom:0}li p+p{margin-top:16px}dl{padding:0}dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}dl dd{padding:0 16px;margin-bottom:16px}blockquote{padding:0 15px;margin-left:0;color:#777;border-left:4px solid #ddd}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{display:block;width:100%;overflow:auto}table th{font-weight:700;padding:6px 13px;border:1px solid #ddd}table td{padding:6px 13px;border:1px solid #ddd}table tr{background-color:#fff;border-top:1px solid #ccc}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%;-moz-box-sizing:border-box;box-sizing:border-box}span.frame{display:block;overflow:hidden}span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}span.frame span img{display:block;float:left}span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}span.align-center{display:block;overflow:hidden;clear:both}span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}span.align-center span img{margin:0 auto;text-align:center}span.align-right{display:block;overflow:hidden;clear:both}span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}span.align-right span img{margin:0;text-align:right}span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}span.float-left span{margin:13px 0 0}span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}code,tt{background-color:rgba(0,0,0,0.04);border-radius:3px;font-size:85%;margin:0;padding-bottom:.2em;padding-top:.2em;padding:0}code::before,code::after{content:'\00a0';letter-spacing:-.2em}tt:before,tt:after{content:'\00a0';letter-spacing:-.2em}code br,tt br{display:none}del code{text-decoration:inherit;vertical-align:text-top}pre>code{padding:0;margin:0;font-size:100%;white-space:pre;background:transparent;border:0}.highlight{margin-bottom:16px}.highlight pre{padding:16px;margin-bottom:0;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}pre{padding:16px;margin-bottom:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px;word-wrap:normal}pre code,pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}pre code:before,pre code:after{content:normal}pre tt:before,pre tt:after{content:normal}.poetry pre{font-family:Georgia, Garamond, serif !important;font-style:italic;font-size:110% !important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia, Garamond, serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,table,figure{page-break-inside:avoid}#wrapper{background:#fff;border:none !important;font-size:12px}pre code{overflow:visible}}@media screen{body.inverted{border-color:#555;box-shadow:none;color:#eee !important}.inverted #wrapper,.inverted hr,.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{border-color:#555;box-shadow:none;color:#eee !important}.inverted td,.inverted th{background:#333}.inverted pre,.inverted code,.inverted tt{background:#eeeeee !important;color:#111}.inverted h2{border-color:#555555}.inverted hr{border-color:#777;border-width:1px !important}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eeeeee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eeeeee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}.inverted{background:#0b2531;background:#252a2a}.inverted #wrapper{background:#252a2a}.inverted a{color:#acd1d5}}.highlight{background:#fff}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k,.highlight .o{font-weight:700}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:700}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:700;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:700}.highlight .gu{color:purple;font-weight:700}.highlight .gt{color:#a00}.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr{font-weight:700}.highlight .kt{color:#458;font-weight:700}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .n{color:#333}.highlight .na{color:teal}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:700}.highlight .no{color:teal}.highlight .ni{color:purple}.highlight .ne,.highlight .nf{color:#900;font-weight:700}.highlight .nn{color:#555}.highlight .nt{color:navy}.highlight .nv{color:teal}.highlight .ow{font-weight:700}.highlight .w{color:#bbb}.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{color:#099}.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc,.highlight .vg,.highlight .vi{color:teal}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#EAF2F5}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:blue}.type-csharp .highlight .nf{color:#000;font-weight:400}.type-csharp .highlight .nc{color:#2b91af}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#a31515}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2B91AF}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#A31515}body.dark #wrapper{background:transparent !important;box-shadow:none !important}kbd{background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da;color:#444d56;display:inline-block;font:11px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;line-height:10px;padding:3px 5px;vertical-align:middle}.inverted kbd{background-color:#666;color:#fff}
+#mkreplaced-toc{list-style-position:inside;padding:0;margin:0 0 0 1rem;list-style-type:none}#mkreplaced-toc li::before{content:''}#mkreplaced-toc li{font-size:1rem;line-height:1.25;font-weight:normal}#mkreplaced-toc li ul{font-size:1.3rem;font-weight:300;padding:.5rem 0;margin:0 0 0 1rem}#mkreplaced-toc li.missing{list-style-type:none !important}#mkreplaced-toc.max-1 ul,#mkreplaced-toc.max1 ul{display:none}#mkreplaced-toc.max-2 ul ul,#mkreplaced-toc.max2 ul ul{display:none}#mkreplaced-toc.max-3 ul ul ul,#mkreplaced-toc.max3 ul ul ul{display:none}#mkreplaced-toc.max-4 ul ul ul ul,#mkreplaced-toc.max4 ul ul ul ul{display:none}#mkreplaced-toc.max-5 ul ul ul ul ul,#mkreplaced-toc.max5 ul ul ul ul ul{display:none}.mk-rtl{direction:rtl;text-align:right}body.mkkatex-number-equations{counter-reset:eqnum}body.mkkatex-number-equations .katex-display{position:relative}body.mkkatex-number-equations .katex-display::after{counter-increment:eqnum;content:"(" counter(eqnum) ")";position:absolute;left:0;top:25%}body.mkkatex-number-equations.mkkatex-number-equations-right .katex-display::after{right:0;left:auto}.mkprinting,.mkprinting #wrapper{height:auto;margin-bottom:0;padding-bottom:0}.hideProgress #generated-toc,.hideProgress #firstdiff,.hideProgress #toc-title,.hideProgress #mkdocumentprogress,.hideProgress #mkincludechart,.hideProgress #mkprogressbar1,.hideProgress #mkprogressbar2,.hideProgress b.bookmark,.hideProgress .mkscrollmeter,.hideProgress #alllinks,.hideProgress #criticnav,.hideProgress .popup,.hideProgress #progressindicator,.hideProgress #mkautoscroll,.mkprinting #generated-toc,.mkprinting #firstdiff,.mkprinting #toc-title,.mkprinting #mkdocumentprogress,.mkprinting #mkincludechart,.mkprinting #mkprogressbar1,.mkprinting #mkprogressbar2,.mkprinting b.bookmark,.mkprinting .mkscrollmeter,.mkprinting #alllinks,.mkprinting #criticnav,.mkprinting .popup,.mkprinting #progressindicator,.mkprinting #mkautoscroll{display:none !important}.hideProgress .mkstyledtag,.mkprinting .mkstyledtag{display:none}.mkcolor-grammar-error,.mkcolor-spell-error{background:none;border-bottom:none}.mkprinting.mkshowcomments .mkstyledtag{display:inline;background:#ccc;padding:3px 9px;border-radius:20px;font-size:1}@media print{body{background:white;line-height:1.4}html,body,#wrapper{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-perspective:none !important;-webkit-text-size-adjust:none;border:0;box-sizing:border-box;float:none;margin:0;max-width:100%;padding:0;margin-top:0;width:auto}.critic #wrapper mark.crit{background-color:#fffd38 !important;text-decoration:none;color:#000}h1,h2,h3,h4,h5,h6{page-break-after:avoid}p,h2,h3{orphans:3;widows:3}section{page-break-before:avoid}pre>code{white-space:pre;word-break:break-word}#generated-toc,#firstdiff,#toc-title,#mkdocumentprogress,#mkincludechart,#mkprogressbar1,#mkprogressbar2,.mkscrollmeter,#alllinks,.popup{display:none !important}.suppressprintlinks a{border-bottom:none !important;color:inherit !important;cursor:default !important;text-decoration:none !important}.hrefafterlinktext #wrapper a:link:after,.hrefafterlinktext #wrapper a:visited:after{content:" (" attr(href) ") ";font-size:90%;opacity:.9}.nocodebreak pre{page-break-inside:avoid}img,table,figure{page-break-inside:avoid}.breakfootnotes .footnotes{page-break-before:always}.breakfootnotes .footnotes hr{display:none}#mktoctitle{display:block}#print-title{border-bottom:solid 1px #666;display:block}#wrapper pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{display:block}.task-list{padding-left:3.3rem}.mkstyle--ink .task-list,.mkstyle--swiss .task-list{padding-left:3.3rem !important}.mkstyle--upstandingcitizen .task-list,.mkstyle--github .task-list{padding-left:3.6rem !important}.mkstyle--manuscript .task-list{padding-left:2.4rem !important}.mkstyle--amblin .task-list{padding-left:2.1rem !important}.mkstyle--grump .task-list{padding-left:1rem !important}.mkstyle--grump .task-list .task-list-item-checkbox{left:0 !important}.task-list .task-list-item{list-style-type:none !important;left:auto}.task-list .task-list-item .task-list-item-checkbox{-webkit-appearance:none;position:relative;left:auto}.task-list .task-list-item .task-list-item-checkbox:before{border:solid 1px #aaa;border-radius:2px;color:white;content:' ';display:block;font-weight:bold;height:1em;left:-1rem;line-height:1;position:absolute;text-align:center;top:-.75em;width:1em}.task-list .gh-complete.task-list-item .task-list-item-checkbox:before{background:#838387;content:'\2713'}}
+#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc,#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-position:inside}#wrapper #generated-toc-clone li.missing,#wrapper #mkreplaced-toc li.missing{list-style-type: none!important}#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-type: square}#wrapper #generated-toc-clone>ul>li>ul,#wrapper #mkreplaced-toc>li>ul {list-style-type: circle}#wrapper #generated-toc-clone>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul{list-style-type: circle}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul{list-style-type: lower-greek}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul{list-style-type: disc}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul>li>ul{list-style-type: square}
+#wrapper #generated-toc-clone, #wrapper #mkreplaced-toc, #wrapper #generated-toc-clone ul, #wrapper #mkreplaced-toc ul, #wrapper #mkreplaced-toc a, #wrapper #mkreplaced-toc ul li a {
+	list-style-position: inside;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+#mkreplaced-toc li ul {
+	padding: 0px;
+}
+#wrapper p.mkcaption { display: none; }
+#wrapper { font-size: 14px; line-height: 16px;}
+.codeoutput { font-size; smaller }
+pre { overflow: auto; }
+
+</style>
+
+<style id="mkprintstyles">@media print{#wrapper #generated-toc-clone,#generated-toc{display:none!important}h2{page-break-before:always}
+html,body,#wrapper{font-size:10pt}
+}
+</style>
+
+
+  </head>
+<body class="normal firstload showpagebreaks">
+  <div id="wrapper">
+<h1 id="mrc-converter-suitebraconvertersuitefor1password"><img src="./images/MrC_Converter_Suite.png" alt="mrc-converter-suite" /><br />A Converter Suite for 1Password</h1>
+
+
+<ul style="display: block;" id="mkreplaced-toc" class="max-2"><li class="notmissing"><a href="#instructions" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#step1" class="wiki-link">1. Prepare Your Data</a><ul><li class="notmissing"><a href="#avastpasswords" class="wiki-link">Avast Passwords</a><ul><li class="notmissing"><a href="#platforms" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions2" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#bitwarden" class="wiki-link">Bitwarden</a><ul><li class="notmissing"><a href="#platforms2" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description2" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions3" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#chrome" class="wiki-link">Chrome</a><ul><li class="notmissing"><a href="#platforms3" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description3" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions4" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#options" class="wiki-link">Options</a></li></ul></li><li class="notmissing"><a href="#clipperz" class="wiki-link">Clipperz</a><ul><li class="notmissing"><a href="#platforms4" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description4" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions5" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes2" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#csv" class="wiki-link">CSV</a><ul><li class="notmissing"><a href="#platforms5" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description5" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions6" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#additionalcolumns" class="wiki-link">Additional Columns</a></li></ul></li><li class="notmissing"><a href="#dataguardian" class="wiki-link">Data Guardian</a><ul><li class="notmissing"><a href="#platforms6" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description6" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions7" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes3" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#datavault" class="wiki-link">DataVault</a><ul><li class="notmissing"><a href="#platforms7" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description7" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions8" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes4" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#elpass" class="wiki-link">Elpass</a><ul><li class="notmissing"><a href="#platforms8" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description8" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions9" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes5" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#enpass" class="wiki-link">Enpass</a><ul><li class="notmissing"><a href="#platforms9" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description9" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions10" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes6" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#essentialpim" class="wiki-link">EssentialPIM</a><ul><li class="notmissing"><a href="#platforms10" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description10" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions11" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes7" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#ewallet" class="wiki-link">eWallet</a><ul><li class="notmissing"><a href="#platforms11" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description11" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions12" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes8" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#firefox" class="wiki-link">Firefox</a><ul><li class="notmissing"><a href="#platforms12" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description12" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions13" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#f-securekey" class="wiki-link">F-Secure KEY</a><ul><li class="notmissing"><a href="#platforms13" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description13" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions14" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#handysafe" class="wiki-link">Handy Safe</a><ul><li class="notmissing"><a href="#platforms14" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description14" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions15" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#ironkeyidentitymanager" class="wiki-link">IronKey Identity Manager</a><ul><li class="notmissing"><a href="#platforms15" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description15" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions16" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#kasperskypasswordmanager" class="wiki-link">Kaspersky Password Manager</a><ul><li class="notmissing"><a href="#platforms16" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description16" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions17" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes9" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#keepass2" class="wiki-link">KeePass 2</a><ul><li class="notmissing"><a href="#platforms17" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description17" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions18" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes10" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#keepassx" class="wiki-link">KeePassX</a><ul><li class="notmissing"><a href="#platforms18" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description18" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions19" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes11" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#keeperdesktop" class="wiki-link">Keeper Desktop</a><ul><li class="notmissing"><a href="#platforms19" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description19" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions20" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes12" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#keychain" class="wiki-link">Keychain</a><ul><li class="notmissing"><a href="#platforms20" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description20" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions21" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes13" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#keyfinder" class="wiki-link">Key Finder</a><ul><li class="notmissing"><a href="#platforms21" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description21" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions22" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#lastpass" class="wiki-link">LastPass</a><ul><li class="notmissing"><a href="#platforms22" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description22" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions23" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes14" class="wiki-link">Notes</a></li><li class="notmissing"><a href="#notes15" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#licensekeeper" class="wiki-link">LicenseKeeper</a><ul><li class="notmissing"><a href="#platforms23" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description23" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions24" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes16" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#msecure3" class="wiki-link">mSecure 3</a><ul><li class="notmissing"><a href="#platforms24" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description24" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions25" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes17" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#msecure5" class="wiki-link">mSecure 5</a><ul><li class="notmissing"><a href="#platforms25" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description25" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions26" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes18" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#nortonidentitysafe" class="wiki-link">Norton Identity Safe</a><ul><li class="notmissing"><a href="#platforms26" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description26" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions27" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes19" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#1password1piftohtmlcsv" class="wiki-link">1Password 1PIF (to HTML, CSV)</a><ul><li class="notmissing"><a href="#platforms27" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description27" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions28" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes20" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#passpack" class="wiki-link">Passpack</a><ul><li class="notmissing"><a href="#platforms28" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description28" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions29" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes21" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#passwordagent" class="wiki-link">Password Agent</a><ul><li class="notmissing"><a href="#platforms29" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description29" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions30" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#passwordboss" class="wiki-link">Password Boss</a><ul><li class="notmissing"><a href="#platforms30" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description30" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions31" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#options2" class="wiki-link">Options</a></li><li class="notmissing"><a href="#notes22" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#passworddepot" class="wiki-link">Password Depot</a><ul><li class="notmissing"><a href="#platforms31" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description31" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions32" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes23" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#passwordsafe" class="wiki-link">Password Safe</a><ul><li class="notmissing"><a href="#platforms32" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description32" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions33" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#passwordsplus" class="wiki-link">Passwords Plus</a><ul><li class="notmissing"><a href="#platforms33" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description33" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions34" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes24" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#passwordwallet" class="wiki-link">PasswordWallet</a><ul><li class="notmissing"><a href="#platforms34" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description34" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions35" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#roboform" class="wiki-link">RoboForm</a><ul><li class="notmissing"><a href="#platforms35" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description35" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions36" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes25" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#safeincloud" class="wiki-link">Safe in Cloud</a><ul><li class="notmissing"><a href="#platforms36" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description36" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions37" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#safewallet" class="wiki-link">SafeWallet</a><ul><li class="notmissing"><a href="#platforms37" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description37" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions38" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#spbwallet" class="wiki-link">SPB Wallet</a><ul><li class="notmissing"><a href="#platforms38" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description38" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions39" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#splashidsafe" class="wiki-link">SplashID Safe</a><ul><li class="notmissing"><a href="#platforms39" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description39" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions40" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes26" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#stickypassword" class="wiki-link">Sticky Password</a><ul><li class="notmissing"><a href="#platforms40" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description40" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions41" class="wiki-link">Instructions</a></li></ul></li><li class="notmissing"><a href="#truekey" class="wiki-link">True Key</a><ul><li class="notmissing"><a href="#platforms41" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description41" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions42" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes27" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#textfilestosecurenotes" class="wiki-link">Text Files (to Secure Notes)</a><ul><li class="notmissing"><a href="#platforms42" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description42" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions43" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes28" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#vcardfromcontacts" class="wiki-link">vCard (from Contacts)</a><ul><li class="notmissing"><a href="#platforms43" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description43" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions44" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes29" class="wiki-link">Notes</a></li><li class="notmissing"><a href="#seealso" class="wiki-link">See Also</a></li></ul></li><li class="notmissing"><a href="#subsemblywallet4x4w" class="wiki-link">Subsembly Wallet 4X/4W</a><ul><li class="notmissing"><a href="#platforms44" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description44" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions45" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes30" class="wiki-link">Notes</a></li></ul></li><li class="notmissing"><a href="#yojimbo" class="wiki-link">Yojimbo</a><ul><li class="notmissing"><a href="#platforms45" class="wiki-link">Platforms</a></li><li class="notmissing"><a href="#description45" class="wiki-link">Description</a></li><li class="notmissing"><a href="#instructions46" class="wiki-link">Instructions</a></li><li class="notmissing"><a href="#notes31" class="wiki-link">Notes</a></li></ul></li></ul></li><li class="notmissing"><a href="#step2" class="wiki-link">2. Convert</a><ul><li class="notmissing"><a href="#step2macos" class="wiki-link">macOS</a><ul><li class="notmissing"><a href="#method1%3Ausingthemacosconverthelper" data-orig-id="method1%3Ausingthemacosconverthelper" class="wiki-link">Method 1: Using the macOSConvertHelper</a></li><li class="notmissing"><a href="#method2%3Amanuallyenteringthecommandline" data-orig-id="method2%3Amanuallyenteringthecommandline" class="wiki-link">Method 2: Manually entering the command line</a></li></ul></li><li class="notmissing"><a href="#step2windows" class="wiki-link">Windows</a></li></ul></li><li class="notmissing"><a href="#step3" class="wiki-link">3. Import into 1Password</a></li><li class="notmissing"><a href="#step4" class="wiki-link">4. Cleanup</a><ul><li class="notmissing"><a href="#datamapping" class="wiki-link">Data Mapping</a></li><li class="notmissing"><a href="#recordsplitting" class="wiki-link">Record Splitting</a></li><li class="notmissing"><a href="#datefields" class="wiki-link">Date Fields</a></li><li class="notmissing"><a href="#groupstagsandotherindicators" class="wiki-link">Groups, Tags, and Other Indicators</a></li><li class="notmissing"><a href="#attachments" class="wiki-link">Attachments</a></li><li class="notmissing"><a href="#whythingsgowrong" class="wiki-link">Why Things Go Wrong</a></li><li class="notmissing"><a href="#whenthingsgowrong" class="wiki-link">When Things Go Wrong</a></li></ul></li><li class="notmissing"><a href="#options3" class="wiki-link">Command Line Options</a><ul><li class="notmissing"><a href="#option%3A--addfields" data-orig-id="option%3A--addfields" class="wiki-link">Option: --addfields</a></li><li class="notmissing"><a href="#option%3A--debug" data-orig-id="option%3A--debug" class="wiki-link">Option: --debug</a></li><li class="notmissing"><a href="#option%3A--imptypesand--exptypes" data-orig-id="option%3A--imptypesand--exptypes" class="wiki-link">Option: --imptypes and --exptypes</a></li><li class="notmissing"><a href="#option%3A--folders" data-orig-id="option%3A--folders" class="wiki-link">Option: --folders</a></li><li class="notmissing"><a href="#optionhelp" class="wiki-link">Option: --help</a></li><li class="notmissing"><a href="#option%3A--notimestamps" data-orig-id="option%3A--notimestamps" class="wiki-link">Option: --notimestamps</a></li><li class="notmissing"><a href="#option%3A--tags" data-orig-id="option%3A--tags" class="wiki-link">Option: --tags</a></li><li class="notmissing"><a href="#option%3A--verbose" data-orig-id="option%3A--verbose" class="wiki-link">Option: --verbose</a></li></ul></li><li class="notmissing"><a href="#closingcomments" class="wiki-link">Closing Comments</a></li><li class="notmissing"><a href="#getmorehelp" class="wiki-link">Get More Help</a></li></ul>
+
+
+
+<h2 id="instructions">Instructions</h2>
+
+<p>The <strong>mrc-converter-suite</strong> helps convert various forms of data into a format
+that can be easily imported by 1Password version 4 to version 7 (1Password 8 does not yet support importing).</p>
+
+<p>The suite is tested and supported on macOS High Sierra and above, or Windows 10 and above.
+Earlier OS releases are no longer tested, nor fully supported (but you're welcome to try).
+It is also likely to run on various Linux distributions (ask if you need assistance).</p>
+
+<p>In most cases the process will take just a few minutes.
+The four basic steps for typical usage are:</p>
+
+<p><a href="#step1">1. Prepare Your Data</a><br />
+<a href="#step2">2. Convert</a><br />
+<a href="#step3">3. Import into 1Password</a><br />
+<a href="#step4">4. Cleanup</a></p>
+
+<p>A few specialty converters are available too,
+one for printing 1Password exported data or converting it to CSV,
+one for importing text files into 1Password, and one for importing vCard contacts.</p>
+
+<p>Let's get started...</p>
+
+<h2 id="step1">1. Prepare Your Data</h2>
+
+<p>Jump to your password manager section below, and after your data is ready, go to the step <a href="#step2"><strong>2. Convert</strong></a>.
+Use the Table of Contents and links to quickly jump.</p>
+
+<p><strong>Note</strong>: This guide suggests a specific file name for your exported data file.
+This helps make writing these instructions easier.
+If you use a different name, be sure to adjust any commands that use that export file's name.</p>
+
+<p><strong>Note</strong>: Unless directed, do not edit your exported data file.
+The converters assume native exports, and editing can change the contents and/or format.</p>
+
+<hr />
+<hr />
+<h3 id="avastpasswords">Avast Passwords</h3>
+
+<p><em>Converter name:</em> <strong>avastpasswords</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 4.6.6.4372</li>
+<li><strong>Windows</strong>: Not yet tested</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Avast Passwords JSON data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch the desktop version of Avast Passwords.
+You will export your Avast Passwords data as <strong>JSON</strong> data.</p>
+
+<p>Under the <code>Avast Passwords &gt; Import / Export</code> menu, select the <code>Export to JSON...</code> menu item.
+When the <code>Export passwords to JSON</code> dialog appears, navigate to your Desktop folder,
+and save the file with the name <strong>pm_export.json</strong> to your Desktop.
+Click <code>OK</code> when the confirmation dialog appears.</p>
+
+<p>You may now quit Avast Passwords.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="bitwarden">Bitwarden</h3>
+
+<p><em>Converter name:</em> <strong>bitwarden</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 1.23.0</li>
+<li><strong>Windows</strong>: Initially tested with version 1.1.12</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Bitwarden data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch either the desktop version of Bitwarden, or login into your Bitwarden vault via your browser.
+You will export your Bitwarden data as <strong>JSON</strong> data.</p>
+
+<p><strong>Exporting using the desktop app</strong>:
+Use the <code>File &gt; Export Vault</code> menu.
+When the <code>EXPORT VAULT</code> dialog appears, set the <code>File Format</code> to <code>.json</code>.
+Provide your master password, and click the download button icon (at the bottom left of the dialog).
+In the <code>Save As</code> dialog, navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export</strong> to your Desktop.</p>
+
+<p><strong>Exporting using the browser</strong>:
+Log into your Bitwarden vault using your browser.
+Click on the <code>Tools</code> item at the top of the page.
+Click on the <code>Export Vault</code> item in the left side bar under the <code>Tools</code> section.
+Set the <code>File Format</code> to <code>.json</code>.
+Provide your master password, and click the <code>Export Vault</code> button.
+When the browser's dialog appears, save the export - it will be saved to your browser's downloads area.
+Find the exported JSON file in your browser's downloads area.
+The downloaded file will be named something like <em>bitwarden_export_20190309125037</em>.
+Move this file to your Desktop.
+That will be the file name you supply to the converter (you may rename it).</p>
+
+<p>You may now quit Bitwarden.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>Attachments are not exported by Bitwarden..
+Be sure to download any attachments you have saved in your Bitwarden vault.</p>
+
+<p>When using the <code>--addfields</code> option, custom fields of type &quot;Hidden&quot; will be concealed in 1Password.</p>
+
+<p>Custom fields of type &quot;Linked&quot; will indicate the link's referent (i.e. the Username or Password field).</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="chrome">Chrome</h3>
+
+<p><em>Converter name:</em> <strong>chrome</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: 65.0.3325.146 tested, earlier versions probably work</li>
+<li><strong>Windows</strong>: 65.0.3325.146 tested, earlier versions probably work</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>This converter decrypts and converts your Chrome Logins and Credit Card profile data.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>You do not need to supply a file name on the command line.</p>
+
+<p>On <strong>macOS</strong>, the converter will cause two password dialogs to be presented, requesting access to your macOS Login keychain and the Chrome-specific password record that protects your Chrome storage (this key is required to decrypt your encrypted Chrome autofill entries).
+Supply the passwords when requested.</p>
+
+<p>After exporting your data, you must quit Chrome before running the converter.</p>
+
+<h4 id="options">Options</h4>
+
+<p>The <code>--username</code> option allows you to reject any entry in the saved passwords list if the username
+does not match the specified &lt;string&gt; argument.
+THe <em>&lt;string&gt;</em> argument can be string or a regular expression pattern.
+The default is an exact string match.
+To match using a regular expression, surround <em>&lt;string&gt;</em> with forward-slashes, with an optional trailing <strong>i</strong> to ignore case.</p>
+
+<p>Example: <code>--username /mrc/i</code> will match <strong>MrC</strong> and <strong>mrc</strong> anywhere in the username component.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="clipperz">Clipperz</h3>
+
+<p><em>Converter name:</em> <strong>clipperz</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Clipperz is a web program, and has no version numbers; initially tested on Sept 2014</li>
+<li><strong>Windows</strong>: Clipperz is a web program, and has no version numbers; initially tested on Sept 2014</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Clipperz data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Log into <a href="https://clipperz.is/app/">Clipperz</a> to export your database.</p>
+
+<p>When logged in, select the menu button in the upper right of the interface (the 3 stacked bars). Select <code>Data</code>, then select <code>Export</code>,
+and then click the <code>download HTML+JSON</code> button on the left.</p>
+
+<p>Some browsers such as Firefox or Internet Explorer may ask what to do with the file.
+You want to <strong>Save</strong> the file - in Firefox, for example, click the <code>Save File</code> selector and then click <code>OK</code>.
+Other browsers may immediately save the file to your browser's Downloads folder.</p>
+
+<p>The downloaded file will be named something like <em>20190115-Clipperz_Export.html</em>.
+Move this file to your Desktop. That will be the file name you supply to the converter (you may rename it).</p>
+
+<p>You may now logoff the Clipperz site.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>The Clipperz converter supports only English field names.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="csv">CSV</h3>
+
+<p><em>Converter name:</em> <strong>csv</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Supported</li>
+<li><strong>Windows</strong>: Supported</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>The <strong>csv</strong> converter is a generic CSV/TSV (comma or tab separated values) converter that supports conversion to from CSV/TSV to 1PIF,
+for the following 1Password categories:</p>
+
+<ul>
+<li>Bank Account</li>
+<li>Credit Card</li>
+<li>Email Account</li>
+<li>Identity</li>
+<li>Login</li>
+<li>Membership</li>
+<li>Password</li>
+<li>Social Security</li>
+<li>Software License</li>
+</ul>
+
+<p>The converter defaults to CSV.
+If your file is in a TSV (or other separated-values) format, you can specify the separator character on the command line using
+the <code>--sepchar</code> option with a <em>char</em> argument.
+The <em>char</em> argument can be <code>\t</code> or the case-insensitive word <strong>tab</strong> (e.g. <code>--sepchar tab</code>).
+Other characters are supported, but not double-quotes.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Format your file such that it contains only a single category of data per file.
+The category types are listed above.</p>
+
+<p>Construct the file using a <em>spreadsheet</em> program.
+It is not a good idea to use a text editor to manually construct a CSV/TSV file, unless you clearly understand CSV/TSV
+formatting and quoting rules, and file encodings.</p>
+
+<p>The first row of the data <em>must</em> be the header row, and it <em>must</em> contain specifically named field labels.
+These are used to inform the converter about the data contained in the column, and to identify the target 1Password category.
+The names for the field label are indicated in the table below.
+Those shown in <strong>bold</strong> trigger category detection - you need at least one of these.
+Additional per-category notes and requirements are listed in the table.</p>
+
+<ul>
+<li>Labels are case-insensitive.</li>
+<li>The order of the columns in your CSV file is unimportant</li>
+<li>You may supply additional columns with your own custom labels.</li>
+<li>You <strong>must</strong> include at least one of the field labels shown in bold in the table below.</li>
+<li>The converter will detect the file's encoding, when it contains a BOM (byte order mark).
+Valid encodings are: UTF-8, UTF-16BE, UTF-16LE, UTF-32BE, and UTF-32LE.
+If there is no BOM, UTF-8 or ASCII is assumed.</li>
+</ul>
+
+<table>
+<caption id="tableoffieldlabelsper1passwordcategory"> Table of Field Labels per 1Password Category </caption>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Category</th>
+	<th style="text-align:left;">Field Labels<br /><em>Labels in bold trigger category detection</em></th>
+	<th style="text-align:left;">Notes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"><strong>Bank Account</strong></td>
+	<td style="text-align:left;"><em>Title</em>, <strong>Bank Name</strong>, <strong>Owner</strong>, <strong>Account Type</strong>, <strong>Routing Number</strong>, <strong>Account Number</strong>, <strong>SWIFT</strong>, <strong>IBAN</strong>, <em>PIN</em>, <em>Phone</em>, <em>Address</em>, <em>Notes</em></td>
+	<td style="text-align:left;">See Notes 1,2 regarding Account Type.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Credit Card</strong></td>
+	<td style="text-align:left;"><em>Title</em>, <strong>Card Number</strong>, <strong>Expires</strong>, <strong>Cardholder</strong>, <em>PIN</em>, <strong>Bank</strong>, <strong>CVV</strong>, <em>Notes</em></td>
+	<td style="text-align:left;">See Notes 1,3 regarding Expires.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Email Account</strong></td>
+	<td style="text-align:left;"><em>Title</em>, <em>Type</em>, <strong>Email Username</strong>, <strong>Email Password</strong>, <strong>SMTP Username</strong>, <strong>SMTP Password</strong>, <em>Notes</em></td>
+	<td style="text-align:left;">See Note 8 regarding Type.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Identity</strong></td>
+	<td style="text-align:left;"><em>Title</em>, <strong>First Name</strong>, <strong>Initial</strong>, <strong>Last Name</strong>, <strong>Sex</strong>, <strong>Birth Date</strong>, <strong>Occupation</strong>, <em>Company</em>, <strong>Department</strong>, <strong>Job Title</strong>, <strong>Address</strong>, <strong>Default Phone</strong>, <strong>Home Phone</strong>, <strong>Cell Phone</strong>, <strong>Business Phone</strong>, <strong>Default Username</strong>, <strong>Reminder Question</strong>, <strong>Reminder Answer</strong>, <strong>Email</strong>, <em>Website</em>, <strong>ICQ</strong>, <strong>Skype</strong>, <strong>AIM</strong>, <strong>Yahoo</strong>, <strong>MSN</strong>, <strong>Forum Signature</strong>, <em>Notes</em></td>
+	<td style="text-align:left;">See Note 6 regarding Address</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Login</strong></td>
+	<td style="text-align:left;"><em>Title</em>, <strong>Login Username</strong>, <strong>Login Password</strong>, <strong>Login URL</strong>, <strong>Additional URLs</strong>, <em>Notes</em></td>
+	<td style="text-align:left;">See Note 7 regarding Additional URLs</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Membership</strong></td>
+	<td style="text-align:left;"><em>Title</em>, <strong>Group</strong>, <strong>Member Name</strong>, <strong>Member ID</strong>, <strong>Expiration Date</strong>, <strong>Member Since</strong>, <em>PIN</em>, <em>Telephone</em>, <strong>Membership Username</strong>, <strong>Membership Password</strong>, <strong>Membership URL</strong>, <em>Notes</em></td>
+	<td style="text-align:left;">See Notes 1,3 regarding Expiration Date and Member Since.<br />See Note 5 regarding Membership Username, Membership Password and Membership URL.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Password</strong></td>
+	<td style="text-align:left;"><em>Title</em>, <strong>Password URL</strong>, <strong>Password</strong>, <em>Notes</em></td>
+	<td style="text-align:left;"></td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Social Security</strong></td>
+	<td style="text-align:left;"><em>Title</em>, <em>Name</em>, <strong>SS Number</strong>, <em>Notes</em></td>
+	<td style="text-align:left;"></td>
+</tr>
+<tr>
+	<td style="text-align:left;"><strong>Software</strong></td>
+	<td style="text-align:left;"><em>Title</em>, <strong>Version</strong>, <strong>License Key</strong>, <strong>Licensed To</strong>, <strong>Registered Email</strong>, <em>Company</em>, <strong>Download Link</strong>, <strong>Software Publisher</strong>, <strong>Publisher's Website</strong>, <strong>Retail Price</strong>, <strong>Support Email</strong>, <strong>Purchase Date</strong>, <strong>Order Number</strong>, <em>Notes</em></td>
+	<td style="text-align:left;">See Notes 1,4 regarding Purchase Date.</td>
+</tr>
+<tr>
+	<td style="text-align:left;" colspan="3"><strong>Note 1</strong>: Invalid values will go to the Notes section of the entry.<br /><strong>Note 2</strong>: Valid values for Account Type are: <strong>Checking</strong>, <strong>Savings</strong>, <strong>LOC</strong> or <strong>Line of Credit</strong>, <strong>ATM</strong>, <strong>Money Market</strong> or <strong>MM</strong>, or <strong>Other</strong> (case-insensitive).<br /><strong>Note 3</strong>: Valid dates are in the format mm/yyyy or mmyyyy.<br /><strong>Note 4</strong>: Valid dates are in the format yyyy-mm-dd, yyyy/mm/dd, M/D/YYYY (M and D are 1 or 2 digits), or those in Note 3.<br /><strong>Note 5</strong>: These fields will be split from the item and placed into a 1Password Login item.<br /><strong>Note 6</strong>: An Address will go to the Notes section of the entry, since arbitrary address data cannot be reliably parsed into 1Password's required internal form.<br /><strong>Note 7</strong>: Additional URLs is a semcolon- or newline-separated list of URLs - these will be added as supplementary (i.e. clickable, open and fill) URLs in the Login item.<br /><strong>Note 8</strong>: Valid values for Type are: <strong>pop3</strong>, <strong>imap</strong>, or <strong>either</strong>.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="additionalcolumns">Additional Columns</h4>
+
+<p>There are a few additional reserved field label names: <strong>Tags</strong>, <strong>Modified</strong>, and <strong>Created</strong>.
+These will be treated specially.</p>
+
+<p>Data in the <strong>Tags</strong> column will be used to set the 1Password item's <strong>Tag</strong> value.
+Multiple tags may be assigned using a comma-separated list of values.</p>
+
+<p>The columns <strong>Modified</strong> and/or <strong>Created</strong> will be used to set the item's modified and created dates, respectively.
+The values are Unix epoch integers (seconds since 1/1/1970).
+Invalid values will cause the data to be stored in the item's Notes area.</p>
+
+<p>You may have additional columns.
+The labels you've supplied will be used to create custom fields in the 1Password item.
+You may disable this with the <code>--noaddfields</code> option.
+Do not use any of the reserved field labels mentioned elsewhere.</p>
+
+<p>This converter supports cross-platform conversion (the export may be exported on one platform, but converted on another).</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="dataguardian">Data Guardian</h3>
+
+<p><em>Converter name:</em> <strong>dataguardian</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 3.2</li>
+<li><strong>Windows</strong>: Initially tested with version 3.2</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Data Guardian data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Data Guardian.</p>
+
+<p>Export its database to a CSV text file using the <code>Record &gt; Export...</code> menu item.
+From the left side bar, select <strong>Text</strong>.
+Under the list of fields that can be exported, click the <code>Check All</code> button.
+In the <code>Field Delimiter</code> pulldown, select the <code>Comma (CSV)</code> choice.
+Under <code>Options</code>, select the <code>Include header row</code> checkbox.
+Click the <code>Export</code> button, and when the <code>Export Database</code> dialog appears, navigate to your Desktop folder.
+Save the file to your <strong>Desktop</strong> folder with a simple name such as <strong>pm_export.txt</strong>.
+When the dialog appears asking which suffix to use, select the <code>use .txt</code> button.</p>
+
+<p>You may now quit Data Guardian.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>Data Guardian does not construct a reliable CSV file.
+In certain cases, it is impossible to determine one field from the next field (the field's
+value will contain one or more (unescaped) commas and/or double quotes).
+When this occurs, the converter will skip the record, and report an error indicating the name of the record.</p>
+
+<p>This converter supports cross-platform conversion (the export may be exported on one platform, but converted on another).</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="datavault">DataVault</h3>
+
+<p><em>Converter name:</em> <strong>datavault</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 5.2.39</li>
+<li><strong>Windows</strong>: Initially tested with version 5.1.32</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported DataVault data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch DataVault.</p>
+
+<p>Export its database to a text file using the <code>Tools &gt; Export</code> menu item.
+Select the <code>All Items (DVX, CSV)</code> choice, and click <code>OK</code>.
+In the <code>Save As</code> dialog, navigate to your <strong>Desktop</strong> folder, set the file to <strong>pm_export.csv</strong>,
+and leave the <code>Save as type</code> set to <code>CSV files (.csv files)</code>.
+Save the export.</p>
+
+<p>You may now quit DataVault.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>The DataVault CSV export is generally lossy.
+It does not export the Category, Type, or Template information.</p>
+
+<p>The DataVault CSV export on Windows is lossy.
+The user interface accepts Unicode characters, however, only latin1 characters are exported to the CSV file.
+Non-latin1 characters are transliterated. For example, the character <strong>ş</strong> becomes <strong>s</strong>.</p>
+
+<p>The CSV export for DataVault for macOS does not properly CSV-quote its data.
+This will cause the converter to skip the problematic record and generate a warning.
+You will need to manually enter any of these noted records.</p>
+
+<p>DataVault has several essentially identical templates that are indistinguishable in the CSV export.
+These are treated as identical converter input types, and are listed below:</p>
+
+<ul>
+<li>bank account, checking account --&gt; bankacct</li>
+<li>business contact, personal contact --&gt; contact</li>
+<li>credit card, mastercard, visa --&gt; creditcard</li>
+<li>business, financial --&gt; business</li>
+</ul>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="elpass">Elpass</h3>
+
+<p><em>Converter name:</em> <strong>elpass</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 1.1.9 (277)</li>
+<li><strong>Windows</strong>: N/A</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Elpass JSON data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch the desktop version of Elpass.
+You will export your Elpass data as unencrypted <strong>JSON</strong> data.</p>
+
+<p>Under the <code>File &gt; Export</code> menu, select the <code>Export All items to .elpassexport File...</code> menu item.
+Enter your master password when requested.
+When the <code>Elpass</code> export dialog appears, navigate to your Desktop folder,
+and save the file with the name <strong>pm_export</strong> to your Desktop.</p>
+
+<p>You should now have the file named <strong>pm_export.elpassexport</strong> on your Desktop - use this file name on the command line.</p>
+
+<p>You may now quit Elpass.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>Elpass' Identification category is a free-form entry type, and therefore must be imported as a Secure Note.</p>
+
+<p>Elpass' Bank Card category has several sub-categories: Credit Card, Debit Card, Prepaid Card.
+These will be exported as Credit Card entries.
+The sub-category of Bank Account conains field names that are nonsensical for such a category.
+These will be placed in the Notes section of the entry.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="enpass">Enpass</h3>
+
+<p><em>Converter name:</em> <strong>enpass</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 5.6.3; version 6 beta in progress</li>
+<li><strong>Windows</strong>: Initially tested with version 5.6.3; version 6 beta in progress</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Enpass data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Enpass and set the language to English under <code>Tools &gt; Settings &gt; Advanced &gt; Language</code>.
+Quit Enpass completely and relaunch it.
+The language must be set to English so that field names in the export file can match those expected by the converter.</p>
+
+<p><strong>Enpass version 6</strong>:
+Export your data as <strong>JSON</strong>.
+Use the <code>File &gt; Export</code> menu, select the vault from the <code>Select Vault You Want to Export</code> pulldown, and select the <code>.json</code> format.
+Select your <strong>Desktop</strong> folder under the <code>Choose Location</code> selector, enter the file name <strong>pm_export</strong>, and click <code>Save</code>.
+Now click the <code>Export</code> button, provide your master password when the Export dialog appears, and click the <code>Continue</code> button.
+Next click the <code>Done</code> button.
+You should now have the file named <strong>pm_export.json</strong> on your Desktop- use this file name on the command line.</p>
+
+<p><strong>Enpass versions prior to 6</strong>:
+Export your Enpass data as <strong>CSV</strong>.
+Use the <code>File &gt; Export &gt; as CSV</code> menu.
+Provide your master password when the Export dialog appears, and click the <code>OK</code> button.
+Next click the <code>OK</code> button in the dialog that warns you about the data export being unprotected.
+In the <code>Save</code> dialog, navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export.txt</strong> to your Desktop.</p>
+
+<p>You may now quit Enpass.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>Enpass' CSV exports are problematic and ambiguous.
+The converter attempts to handle these situations, but some data can cause issues.
+In such cases, you may need to open your export file in a spreadsheet and correct any entries that have been split into two rows , and re-export to CSV in UTF-8 format.</p>
+
+<p>There are several generic <em>Other</em> categories in Enpass, and these contain only two stock fields &quot;Field 1&quot; and &quot;Field 2&quot;.
+Because these records are indistinguishable in the export, the converter maps them to a single <strong>other</strong> category.</p>
+
+<p>Most of Enpass' field values are free-form text (they are not validated, and may be nonsensical).
+Given this, the converter will not attempt to place some values into a specific 1Password field, but instead must place these
+values into the Notes area as label / value pairs.</p>
+
+<p>Records imported into Enpass 6 from another password manager are not converted to Enpass' own internal categories.
+They are instead placed into a generic category.
+The converter cannot automatically determine the record type for these records,
+because the field names and semantics vary based on the original password manager.
+The result will be that many of your records will convert as Secure Notes.
+The converter can be customized to handle your data.
+If you are in this situation, use the <code>--dumpcats</code> option to examine the field names present in
+the &quot;import.imported&quot; category shown in the output.
+You can decide which of these fields should be mapped to the username, password, and URL fields
+for a Login category.
+There is a commented-out entry in the Enpass.pm converter file's table of category/field names
+which can be uncommented and tailored to your data.
+Ask if you need help.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="essentialpim">EssentialPIM</h3>
+
+<p><em>Converter name:</em> <strong>essentialpim</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: N/A</li>
+<li><strong>Windows</strong>: Initially tested with version 6.04</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported EssentialPIM data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch EssentialPIM and export its password database to a text file using
+the <code>File &gt; Export &gt; Password Entries &gt; Comma Separated Values (*.csv)...</code> menu.
+Select All entries from the <code>Entries to be exported</code> dialog.
+Optionally, you may select the fields you want exported by selecting the <code>Fields...</code> button (however, you should keep selected
+the fields that correspond to the stock fields: <strong>Title</strong>, <strong>User Name</strong>, <strong>Password</strong>, <strong>URL</strong>, and <strong>Notes</strong>).
+Click the <code>OK</code> button, and navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export.txt</strong>.</p>
+
+<p>You may now quit EssentialPIM.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>EssentialPIM does <em>not</em> properly handle the exported field names when the names contain any comma characters.
+Before you export, edit a single password entry record in EssentialPIM, and examine each of your field names.
+Replace all commas in the field names with some other character.
+Editing the field names inside a single record will globally change the field names for all records.
+Once the commas are removed from the field names, you may export your data safely.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="ewallet">eWallet</h3>
+
+<p><em>Converter name:</em> <strong>ewallet</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested using 7.3</li>
+<li><strong>Windows</strong>: Initially tested using 7.6.4</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported eWallet data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch eWallet.</p>
+
+<p>Export its database to a text file using the <code>File &gt; Save As &gt; Text File...</code> menu.
+Save the file with the name <strong>pm_export.txt</strong> to your Desktop.</p>
+
+<p>You may now quit eWallet.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>The eWallet type of Picture Card will be exported as Secure Notes; no pictures will be exported.</p>
+
+<p>eWallet's export format is ambiguous and not well-defined.
+The converter attempts to determine proper record boundaries, but can fail if a card's notes contain a certain pattern.
+The pattern is a blank line followed by the word <strong>Card</strong> followed by a space and then anything else.
+For example, notes containing the following text would confound the converter's ability to detect the card's boundaries:</p>
+
+<pre><code>My poker notes.
+
+Card players rule.
+
+Final hand - the pattern &quot;Card &quot; above will cause a flop.
+</code></pre>
+
+<p>If the number of records output stated by the converter is the same as the number you have in eWallet, this problem did not occur.
+If you have extra records, the problem may have occurred, and you should examine the data imported into 1Password.
+To remedy the problem, be sure no notes in eWallet contain the pattern {blank line}Card{space}{anything else} - it is sufficient to simply lowercase the word <strong>Card</strong>, or add some other character in front of the <strong>C</strong>, such as <strong>x</strong>Card.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="firefox">Firefox</h3>
+
+<p><em>Converter name:</em> <strong>firefox</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 64</li>
+<li><strong>Windows</strong>: Initially tested with version 64</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your Firefox Logins &amp; Passwords data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Quit Firefox before running the converter.</p>
+
+<p>This converter does not require an export file; you do not need to supply one on the command line.
+The converter finds your Firefox profile data and directly decrypts the found data files.
+For each profile, it will ask if you want the profile converted, and if so, it will ask
+for the master password for that profile.
+Enter the profile's master password when requested.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="f-securekey">F-Secure KEY</h3>
+
+<p><em>Converter name:</em> <strong>fsecurekey</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 4.0.108</li>
+<li><strong>Windows</strong>: Initially tested with version 4.0.109</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported F-Secure KEY data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch F-Secure KEY.</p>
+
+<p>Export its database to a text file.
+Click <code>Settings</code> in the sidebar, and then click <code>Export passwords</code> in the Settings pane.
+Click the <code>Export</code> button, and save the file with the name <strong>pm_export.txt</strong> to your Desktop.</p>
+
+<p>You may now quit F-Secure KEY.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="handysafe">Handy Safe</h3>
+
+<p><em>Converter name:</em> <strong>handysafe</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 1.02</li>
+<li><strong>Windows</strong>: Initially tested with version Desktop Professional 3.01</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Handy Safe data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Handy Safe.</p>
+
+<p>Select the HANDY SAFE (topmost) grouping in the Handy Safe left sidebar.
+Export the database as an XML export file by selecting the <code>File &gt; Export</code> menu item.
+Navigate to your <strong>Desktop</strong> folder in the Export File dialog, and in the <code>File name</code> area (Windows) or <code>Save As</code> area (macOS),
+enter the name <strong>pm_export.xml</strong>.
+Click <code>Save</code>.
+You should now have the file named <strong>pm_export.xml</strong> on your Desktop - use this file name on the command line.</p>
+
+<p>You may now quit Handy Safe.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="ironkeyidentitymanager">IronKey Identity Manager</h3>
+
+<p><em>Converter name:</em> <strong>ironkeyim</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: N/A</li>
+<li><strong>Windows</strong>: Initially tested with firmware 4.0.5, software 3.4.3.2 (Export to XML available in v2.5.1.0)</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported IronKey Identity Manager data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch IronKey Identity Manager.</p>
+
+<p>Insert and unlock your IronKey device.
+From the IronKey Control Panel, launch Identity Manager.
+From the <code>Identity Manager</code> menu, select the <code>Backup &gt; Export as Text or XML</code> item.
+Click <code>OK</code> when export warning dialog appears, something like
+<em>The information in exported file will not be encrypted. Would you like to export your database to a file?</em>).
+Navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export.xml</strong> to your Desktop.
+Ensure that <code>Xml files</code> is set as the <code>Save as type:</code> and click <code>Save</code>.
+You should receive a final cautionary dialog indicating that the database has been successfully exported and that its contents are unencrypted.
+Click <code>OK</code> to continue.</p>
+
+<p>You may now close IronKey Identity Manager.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="kasperskypasswordmanager">Kaspersky Password Manager</h3>
+
+<p><em>Converter name:</em> <strong>kaspersky</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: N/A - vault export unavailable</li>
+<li><strong>Windows</strong>: Initially tested using 9.0.2.15298</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Kaspersky data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Kaspersky Password Manager.</p>
+
+<p>Export its database to a text file by clicking on the <code>... Additional</code> item at the bottom left of the application.
+From there, select the <code>Settings</code> item, and then click <code>Import/Export</code>.
+Scroll the right-side list to get to the <strong>Export to text file</strong> area.
+Click the <code>Export</code> button.
+When the <code>Specify file location</code> dialog appears, within it, navigate to your Desktop, and
+save the file with the name <strong>pm_export.txt</strong> to your Desktop.</p>
+
+<p>You may now quit Kaspersky Password Manager.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>The Kaspersky Password Manager's text export is quite limited.
+You should retain Kaspersky Password Manager until you've confirmed you have all the data you require.</p>
+
+<p>Kaspersky Password Manager only exports the categories <strong>Applications</strong>, <strong>Websites</strong>, <strong>Notes</strong>; no other categories are exported.
+The <strong>Applications</strong> category is treated similarly to <strong>Websites</strong>, both will be stored as 1Password <strong>Login</strong> records.</p>
+
+<p>Many record properties are not exported; only the basic fields are available.</p>
+
+<p>The format of the Kaspersky text export file is marginally structured, but is ambiguous.
+The converter uses this expected structure to determine the category and record boundaries.
+However, if your records contain these patterns (in the Comments or Text fields),
+the converter may mis-detect records.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="keepass2">KeePass 2</h3>
+
+<p><em>Converter name:</em> <strong>keepass2</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Untested (a version 2 XML export should work)</li>
+<li><strong>Windows</strong>: Initially tested with version 2.26</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported KeePass 2 data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch KeePass 2.</p>
+
+<p>Export its database to an XML export file using the <code>File &gt; Export ...</code> menu item, and select the <code>KeePass XML (2.x)</code> format.
+In the <code>File: Export to:</code> section at the bottom of the dialog, click the floppy disk icon to select the location.
+Select your <strong>Desktop</strong> folder, and in the <code>File name</code> area, enter the name <strong>pm_export.txt</strong>.
+Click <code>Save</code>.
+You should now have the file named <strong>pm_export.txt</strong> on your Desktop - use this file name on the command line.</p>
+
+<p>You may now quit KeePass 2.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>The converter will decode and convert any attachments contained in an item.
+They are placed in a folder named <strong>1P_Attachments</strong> at the same location that the <strong>1P_import.1pif</strong> file is created (your Desktop, by default).
+The attachments are placed in a sub-directory with the same name as the item (its Title).</p>
+
+<p>This converter supports cross-platform conversion (the export may be exported on one platform, but converted on another).</p>
+
+<p>This converter imports the OTP key used by the keeotp plug-in, such that your OTPs will work in 1Password.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="keepassx">KeePassX</h3>
+
+<p><em>Converter name:</em> <strong>keepassx</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version .0.4.3 - See Notes below</li>
+<li><strong>Windows</strong>: N/A</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported KeePassX data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch KeePassX.</p>
+
+<p>Export its database to a text file using the <code>File &gt; Export to &gt;  KeePassX XML File...</code> menu.
+Navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export.txt</strong> to your Desktop.</p>
+
+<p>You may now quit KeePassX.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>KeePassX version 2.0 does <em>not</em> support exporting to XML.
+However, its database can be read by KeePass 2.
+If you can install KeePass 2, you can use the KeePass 2 instructions above to perform the export and conversion using the <strong>keepass2</strong> converter.
+Unfortunately KeePass 2 installation on an macOS system is non-trivial, so if you have a PC, do the export there.
+You can convert the XML on either platform.
+KeePassX version 2 can export to CSV, so an alternative is to export in that format, and use the <strong>csv</strong> converter to perform the conversion.</p>
+
+<p>The converter will decode and convert any attachments contained in an item.
+They are placed in a folder named <strong>1P_Attachments</strong> at the same location that the <strong>1P_import.1pif</strong> file is created (your Desktop, by default).
+The attachments are placed in a sub-directory with the same name as the item (its Title).</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="keeperdesktop">Keeper Desktop</h3>
+
+<p><em>Converter name:</em> <strong>keeper</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 8.3.3</li>
+<li><strong>Windows</strong>: Initially tested with version 8.3.3</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Keeper Desktop data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Keeper Desktop.</p>
+
+<p>Export its database to a file using the <code>Backup</code> button on the upper right side of the window.</p>
+
+<p><strong>Keeper 10</strong>: Press the last <code>Export Now</code> button, labeled <code>Export to Text File</code>.
+Keeper will open a Finder folder for you, with the exported file (it is named to include the export date, such as <em>20170815210313-keeper.txt</em>).
+Drag the file to your <strong>Desktop</strong> folder.
+You may rename it to <strong>pm_export.txt</strong> to simplify the name you supply on the command line.</p>
+
+<p><strong>Versions prior to Keeper 10</strong>: Press the last <code>Export Now</code> button, labeled <code>Export to Excel (not encrypted)</code>.
+Navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export.txt</strong> to your Desktop.</p>
+
+<p>You may now quit Keeper Desktop.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>This converter supports cross-platform conversion (the export may be exported on one platform, but converted on another).</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="keychain">Keychain</h3>
+
+<p><em>Converter name:</em> <strong>keychain</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Tested on macOS 10.9.5 to 10.14</li>
+<li><strong>Windows</strong>: N/A</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Directly converts OS X / macOS local keychains to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>This converter can directly convert <em>local</em> macOS keychains (no export is required).
+It <em>cannot</em> convert the iCloud Keychain. See Notes below for obtaining Safari passwords stored there.</p>
+
+<p>The simplest method to convert a local keychain is to use the <strong>macOSConvertHelper</strong>.
+Otherwise, you will need to supply the command line with the <em>full</em> path to the local keychain file that
+you wish to convert (see Notes below for obtaining this path).</p>
+
+<p>The converter will request the keychain's password.
+Provide it when requested, and hit Enter.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p><strong>Getting Passwords from Safari 15 or newer</strong></p>
+
+<p>If you are using Safari version 15 or newer, you can export passwords natively to CSV.
+Open Safari's <code>Preferences</code>, go to the <code>Passwords</code> tab, unlock it, and use the small pulldown menu at the bottom of the password list.
+Select the <code>Export Passwords...</code> item, and save the file to your Desktop.
+You can import this CSV file with 1Password.</p>
+
+<p><strong>Getting Passwords from Safari 12 to 14 stored in iCloud Keychain</strong></p>
+
+<p>If you wish to retrieve iCloud Keychain stored Safari passwords, use the <strong>Get_Safari_Passwords</strong> AppleScript
+included in the converter suite.</p>
+
+<p>The video <strong>Converting Safari Passwords.mp4</strong> shows the procedure for running <strong>Get_Safari_Passwords</strong> and converting the CSV file it generates.
+It is available in the <code>Extra Help &gt; Videos</code> folder at the converter suite's download location.</p>
+
+<p><strong>Getting Passwords from Safari 11 and previous</strong></p>
+
+<p>The older version of the script, <strong>Get_Safari11_Passwords</strong> (which supported Sarari versions 11 and older) is still available in the Unsupported folder.</p>
+
+<p><strong>Getting local keychain paths</strong></p>
+
+<p>To get a list of your <em>local</em> keychain paths, in the Terminal app, use the command:</p>
+
+<pre><code>security list-keychains
+</code></pre>
+
+<p>The list of local keychain paths will be output.
+Copy the desired keychain path and paste it on the command line. </p>
+
+<p><strong>Old (unsupported) method for copying iCloud Keychain to a local keychain</strong></p>
+
+<p>Prior to macOS Sierra, it was possible to copy the iCloud Keychain data to a local keychain.
+The method below no longer seems to work (and may not work even on older OS X / macOS releases), so the instructions below should be
+considered obsolete and unsupported.</p>
+
+<p>Conversion of the iCloud Keychain requires copying entries to a new <em>local</em> keychain (there is no direct access to it).
+However, this is problematic in macOS Sierra and above.
+Some entries will not copy, and you will receive non-specific error messages.</p>
+
+<p>To export an iCloud Keychain, you need to create a new local keychain and copy the contents from the iCloud Keychain.
+Launch the <strong>Keychain Access</strong> app, and select the <code>File &gt; New Keychain</code> menu item.
+Name the keychain <strong>local-icloud</strong>, and click the <code>Create</code> button.
+Enter a password and click <code>OK</code>.
+Under the <code>Keychains</code> section, select the <code>iCloud</code> keychain.
+Now select all of the items in that keychain on the right, and copy them with <code>Edit &gt; Copy</code> (or ⌘ + C).
+Select the <strong>local-icloud</strong> keychain, and paste the entries with <code>Edit &gt; Paste</code> (or ⌘ + V) .
+If macOS allows the paste (it may fail), you will be presented with <em>many</em> authorization dialogs.
+Enter your password repeatedly, as requested.
+To simplify entering your password, open a new script document in <strong>Script Editor</strong>, and copy/paste the following script:</p>
+
+<pre><code>    set keychainPassword to &quot;MYPASSWORD&quot;
+
+    tell application &quot;System Events&quot;
+            repeat while exists (processes where name is &quot;SecurityAgent&quot;)
+                    tell process &quot;SecurityAgent&quot;
+                            set frontmost to true
+                            if (count of windows) &gt; 0 then
+                                    set window_name to name of front window
+                            end if
+                            try
+                                    # keystroke &quot;password&quot;
+                                    keystroke keychainPassword
+                                    delay 0.1
+                                    keystroke return
+                                    delay 0.1
+                            on error
+                                    -- do nothing to skip the error
+                            end try
+                    end tell
+                    delay 0.4
+            end repeat
+    end tell
+</code></pre>
+
+<p>replacing the word <strong>MYPASSWORD</strong> with the password you just set for the keychain.
+Run the AppleScript to automate performing the password entry.</p>
+
+<p>You may then use the <strong>macOSConvertHelper</strong> and select the <strong>local-icloud</strong> keychain you just created.</p>
+
+<p>Once the export and conversion has completed, you may delete the <strong>local-icloud</strong> keychain in <code>Keychain Access</code> (delete both References and Files).</p>
+
+<p>You may now quit <strong>Keychain Access</strong> and <strong>Script Editor</strong>.</p>
+
+<p>Copying items from the <strong>iCloud Keychain</strong> to a local keychain sets the modified and created dates of the pasted entries to the time of the paste.
+The original dates are not retained in the copies.</p>
+
+<p>Some items from the iCloud Keychain cannot be copied.
+You may have to work in batches to determine which can be copied and which cannot.
+Resolving the reason for these failures is beyond the scope of this document.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="keyfinder">Key Finder</h3>
+
+<p><em>Converter name:</em> <strong>keyfinder</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 1.2.0.32</li>
+<li><strong>Windows</strong>: N/A</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Key Finder data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Key Finder.</p>
+
+<p>Export its database as an XML export file using the <code>File &gt; Save &gt; Save to XML (*.xml)</code> menu item.
+When the <code>Save</code> dialog appears, enter the name <strong>pm_export.xml</strong>.
+Next, expand the dialog by pressing the downward triangle at the right of the <code>Save As</code> field, select <strong>Desktop</strong> from the sidebar,
+and finally, press the <code>Save</code> button.</p>
+
+<p>You may now quit Key Finder.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="lastpass">LastPass</h3>
+
+<p><em>Converter name:</em> <strong>lastpass</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Tested with various browser extension versions</li>
+<li><strong>Windows</strong>: Tested with various browser extension versions (initially 3.1.54 Firefox/Windows)</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported LastPass data and Form Fill Profiles.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch the browser you normally use with LastPass (but first see <strong>Notes</strong> below).</p>
+
+<p>LastPass will either export your data directly to a file, or it may open a browser window
+with the exported data in that window.
+More recent version of LastPass tend to do the latter.</p>
+
+<p>If you have the LastPass browser extension installed, from the extension,
+and depending on your version of the extension, select either
+<code>More Options &gt; Advanced &gt; Export &gt; LastPass CSV File</code>
+or
+<code>Tools &gt; Advanced Tools &gt; Export To &gt; LastPass CSV File</code>
+and when prompted, enter your LastPass vault password.
+If the exported data opens in a browser window, follow the instructions below.
+If LastPass opens a <code>Save</code> dialog, navigate to your <strong>Desktop</strong>&gt;* folder in the <code>Select a file to export to</code> dialog, and in the <code>File name</code> area,
+enter the name <strong>pm_export.txt</strong>, and click <code>Save</code>.</p>
+
+<p>If your LastPass exported data appeared in a separate browser window,
+you need to select all of the data on the page, copy it, and save it to a plain text file.</p>
+
+<p>On macOS, select all of the data on the export page (⌘ + A) and Copy it (⌘ + C).
+Launch TextEdit, and go to the menu <code>TextEdit &gt; Preferences</code>.
+In the <code>New Document</code> tab, under <code>Format</code>, select <code>Plain Text</code> and close that dialog.
+Open a new document (⌘ + N), and paste the data you copied earlier (⌘ + V).
+Save the file to the Desktop with the file name <strong>pm_export.txt</strong>, selecting <code>Unicode (UTF-8)</code> as the <code>Plain Text Encoding</code>.</p>
+
+<p>On Windows, select all of the data on the export page (Ctrl + A) and Copy it (Ctrl + C).
+Launch Notepad, and paste the data your copied earlier (⌘ + V).
+Save the data using <code>File &gt; Save As...</code> and save the file to the Desktop with the file name <strong>pm_export</strong>.
+By default, Windows will add the <code>.txt</code> suffix.</p>
+
+<p>You may now close the LastPass browser window.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>The LastPass extension for Chrome incorrectly opens the export as an HTML document.
+If you are using Chrome as your browser, do not use the extension to start the export.
+Instead, either use the LastPass extension in a different browser, or use the <code>Tools &gt; Advanced &gt; Export</code> item in the left
+sidebar when your vault is open in the browser (you will have to use the copy / paste method mentioned in the note above).</p>
+
+<p>LastPass exports <em>Form Fill Profiles</em> separately, using the <code>Tools &gt; Advanced Tools &gt; Export To &gt; Form Fill Profiles</code> menu.
+If you wish to convert and import your Form Fill Profiles, export these to a separate export file, perhaps naming it <strong>pm_export_ff.txt</strong>.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>You may specify more than one LastPass export file on the command line.
+The converted data will be output into a single 1PIF file for import.
+This allows you to convert both of your LastPass data and Form Fill Profiles into a single conversion.</p>
+
+<p>This converter supports cross-platform conversion (the export may be exported on one platform, but converted on another).</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="licensekeeper">LicenseKeeper</h3>
+
+<p><em>Converter name:</em> <strong>licensekeeper</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 1.8.4 (1702)</li>
+<li><strong>Windows</strong>: N/A</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported LicenseKeeper data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch LicenseKeeper.</p>
+
+<p>Export its database as an XML export file using the <code>File &gt; Export &gt; Library to XML...</code> menu item.
+When the folder save dialog appears, select <strong>Desktop</strong> from the sidebar, and then click the <code>Choose Export Folder</code> button.
+This will store the XML file inside a folder named <strong>LicenseKeeper Export</strong>.
+The file named <strong>LicenseKeeper.xml</strong> inside that folder is your exported XML data.</p>
+
+<p>You may now quit LicenseKeeper.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>The converter will rename the exported, name-encoded attachments.
+They will be prefixed by the item's Title, and can be found in the <strong>Attachments</strong> folder within the <strong>LicenseKeeper Export</strong> folder.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="msecure3">mSecure 3</h3>
+
+<p><em>Converter name:</em> <strong>msecure</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 3.54 (see Notes)</li>
+<li><strong>Windows</strong>: Initially tested with version 3.54 (see Notes)</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported mSecure 3 data to 1PIF for 1Password import.
+If you need to convert from mSecure version 5, use the <strong>msecure5</strong> converter.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch mSecure 3.</p>
+
+<p>Export its database as a CSV export file using the <code>File &gt; Export &gt; CSV File...</code> menu item.
+Click <code>OK</code> to the warning dialog that advises caution since your data will be exported in an unencrypted format.
+Navigate to your <strong>Desktop</strong> folder in the <code>Export File</code> dialog, and in the <code>File name</code> area, enter the name <strong>pm_export.txt</strong>.
+Click <code>Save</code>.</p>
+
+<p>You may now quit mSecure.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p><strong>macOS</strong>: Versions of mSecure earlier than 3.5.4 do not produce properly formatted CSV.
+The converter attempts to compensate for this, but may fail.</p>
+
+<p><strong>Windows</strong> mSecure version 3.5.4 (and probably earlier) do not produce properly formatted CSV.
+There are issues with the characters backslash \ and double-quotes &quot;.
+There may be additional issues due to the incorrect and ambiguous handling of these escape and quoting characters.
+The converter attempts to compensate for this, but may fail.
+Before you uninstall mSecure, you should verify your data against the data imported into 1Password.</p>
+
+<p><strong>Windows</strong> The mSecure CSV export on Windows is lossy.
+The user interface accepts Unicode characters, however, only latin1 characters are exported to the CSV file.
+Non-latin1 characters are transliterated.
+For example, the character <strong>ş</strong> becomes <strong>s</strong>.</p>
+
+<p>mSecure does not output field labels.
+Before you uninstall mSecure, you should verify that you understand the <em>meaning</em> of the fields after you import into 1Password.
+Take a screenshot or write down your mSecure field names, and order of your customized fields and cards, and compare
+these against the data imported into 1Password.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="msecure5">mSecure 5</h3>
+
+<p><em>Converter name:</em> <strong>msecure5</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: 5.x (see Notes)</li>
+<li><strong>Windows</strong>: Untested</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported mSecure 5 data to 1PIF for 1Password import.
+If you need to convert from mSecure prior to version 5, use the <strong>msecure</strong> converter.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch mSecure 5.</p>
+
+<p>Launch mSecure, and export its database as a CSV export file using the <code>File &gt; Export &gt; CSV File...</code> menu item.
+Click <code>OK</code> to the warning dialog that advises caution since your data will be exported in an unencrypted format.
+Navigate to your <strong>Desktop</strong> folder in the <code>Export File</code> dialog, and in the <code>File name</code> area, enter the name <strong>pm_export.txt</strong>.
+Click <code>Save</code>.</p>
+
+<p>You may now quit mSecure.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>The mSecure 5 export format and features of mSecure 5 have changed dramatically from previous versions.
+mSecure 5 eliminated older, infrequently used Types, and changed the names of some common Types.
+It is not yet clear how user data imported into mSecure 5 from older mSecure vaults is handled.
+Your feedback is appreciated.</p>
+
+<p>Before you uninstall mSecure, be sure to examine your mSecure records for the follow issues, and resolve them as necessary:</p>
+
+<p>The mSecure 5 CSV export does not contain field labels.
+Verify that you understand the <em>meaning</em> of the fields after you import into 1Password.
+Take a screenshot or write down your mSecure field names, and order of your customized fields and cards, and compare
+these against the data imported into 1Password.</p>
+
+<p>The CSV export from mSecure 5 on Windows does not export custom fields.
+Check your mSecure data for any custom fields.
+The data exported to the CSV file does not contain this information, so you will have to manually transfer that data to your
+final 1Password entries.</p>
+
+<p>The mSecure 5 CSV export sidesteps correctly encoding its CSV export.
+It converts double-quotes into Unicode left <strong>“</strong> and right <strong>”</strong> quotes (Unicode 0x201c and 0x201d, respectively) for some fields.
+This converter must reconvert these back to double-quotes and this, however, leaves the possibility that intentional
+left and right Unicode quotes may get converted to ASCII double-quotes.
+Also, mSecure 5 for Windows incorrectly encodes the two character sequence &quot;\n&quot; to the three character sequence &quot;\\n&quot;.
+The converter tries to compensate.</p>
+
+<p>The mSecure 5 CSV export does not export attachments.
+Check your mSecure data for records that contain attachments, and export these manually.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="nortonidentitysafe">Norton Identity Safe</h3>
+
+<p><em>Converter name:</em> <strong>nortonis</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Untested (see Notes)</li>
+<li><strong>Windows</strong>: Initially tested with version 2014.7.11.42</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Norton Identity Safe data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Norton Identity Safe.</p>
+
+<p>Export its database as a CSV export file using the Settings (gear) icon, and selecting the <code>Import/Export</code> tab.
+Select the <code>Plain Text - CSV file (Logins and Notes only)</code> radio button, and click <code>Export</code>.
+Enter your vault password when the <code>Password Protected Item</code> dialog appears, and click <code>OK</code>.
+Navigate to your <strong>Desktop</strong> folder in the <code>Save As</code> dialog.
+In the <code>File name</code> area, enter the name <strong>pm_export.csv</strong>, and click <code>Save</code>.
+Click <code>OK</code> when the successful export dialog appears.</p>
+
+<p>You may now quit Norton Identity Safe.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p><strong>macOS</strong>: Norton Identity Safe exports on macOS have not been untested - a trial version of the software was unavailable.
+It should work, but please report your results.</p>
+
+<p>Norton Identity Safe does not export the Wallet items Credit Card, Bank Account, or Identity.
+It only exports Login and Note items.</p>
+
+<p>Norton Identity Safe does not export Tags.</p>
+
+<p>This converter supports cross-platform conversion (the export may be exported on one platform, but converted on another).</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="1password1piftohtmlcsv">1Password 1PIF (to HTML, CSV)</h3>
+
+<p><em>Converter name:</em> <strong>onepif</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: 1Password 4 or higher</li>
+<li><strong>Windows</strong>: 1Password 4 or higher</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>This is a simple 1Password 1PIF converter that converts exported 1Password 1PIF data into CSV suitable for opening in a spreadsheet,
+or into various HTML formats suitable for printing.
+It uses one of the several <em>formatters</em> to drive the conversion.
+These drivers can be written as XML / XSLT, or Perl modules, but other transformers are possible.
+The format drivers are in the <strong>Formatters</strong> folder.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch 1Password.
+Export the desired data to a 1PIF export file using the <code>File &gt; Export &gt; All Items...</code> menu item (or
+chose the <code>Selected Items</code> sub-menu to export only the selected items).
+Enter your Master Password when requested, and click <code>OK</code>.
+Navigate to your <strong>Desktop</strong> folder in the <code>Export</code> dialog, and in the <code>File name</code> area, enter the name <strong>UNENCRYPTED_DATA</strong>.
+Set the File Format to <code>1Password Interchange Format (.1pif)</code> if it is not already selected.
+Click <code>Save</code>.
+There should now be a 1PIF file with the name above on your Desktop.</p>
+
+<p>You may now quit 1Password.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>After export, 1Password for Mac places the actual 1PIF file inside a folder with the file name you entered above in the <code>File name</code> area.
+1Password will open this folder after the export completes.
+Inside will be a file named <strong>data.1pif</strong>.
+This is the data file the converter will work on.
+You can supply either that file's path, or the folder's, to the converter.</p>
+
+<p>The output formatting is controlled by the formatter specified using the <code>--format</code> option.
+Provide a formatter name (the name of a file in the <strong>Formatters</strong> folder, without the file suffix).
+Example: <code>--format html_expanded</code>.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="passpack">Passpack</h3>
+
+<p><em>Converter name:</em> <strong>passpack</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with web version 7.7.14</li>
+<li><strong>Windows</strong>: Initially tested with web version 7.7.14</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Passpack data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Passpack.</p>
+
+<p>Launch your browser and unlock your Passpack vault.
+From the Passpack toolbar menu, select <code>Tools</code>, and on the next screen, select <code>Export</code>.
+Select the option <code>Comma Separated Values</code> and the other option <code>All entries</code>.
+Select the columns to export under <code>Click on the name of the first field to export</code>.
+Select these one at a time <em>in the same order</em> that they are presented on the screen:
+<strong>Name</strong>, <strong>User ID</strong>, <strong>Password</strong>, <strong>Link</strong>, <strong>Tags</strong>, <strong>Notes</strong> and <strong>Email</strong>.
+Click the <code>Continue</code> button.
+A new window will appear with your exported data.
+Select all of the text data in the text box and copy it.
+You will save this copied data with either <strong>TextEdit</strong> (on macOS) or <strong>Notepad</strong> (on Windows) as follows:</p>
+
+<p><strong>macOS</strong>: Open TextEdit, and select its <code>TextEdit &gt; Preferences</code> menu.
+In the <code>New Document</code> tab, under <code>Format</code>, select <code>Plain Text</code> and close that dialog.
+Open a new document (⌘ + N).
+Paste your copied data (⌘ + V), and save the document to your <strong>Desktop</strong> with the file name <strong>pm_export.txt</strong>,
+selecting <code>Unicode (UTF-8)</code> as the <code>Plain Text Encoding</code>.</p>
+
+<p><strong>Windows</strong>: Create and open a new text document by right-clicking the Desktop and selecting <code>New &gt; Text Document</code>.
+Name the document <strong>pm_export.txt</strong>.
+Right-click that document, select <code>Edit</code>, and paste your copied data (Ctrl-V).
+Select Notepad's <code>File &gt; Save As...</code> menu, set the <code>Encoding</code> to <code>UTF-8</code>, and click <code>Save</code> to save the document.</p>
+
+<p>You may now quit Passpack.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>This converter supports cross-platform conversion (the export may be exported on one platform, but converted on another).</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="passwordagent">Password Agent</h3>
+
+<p><em>Converter name:</em> <strong>passwordagent</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: N/A</li>
+<li><strong>Windows</strong>: Initially tested with version 2.6.3</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Password Agent data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Password Agent.</p>
+
+<p>Export its database as an XML file using the <code>File &gt; Print &amp; Export</code> menu item.
+When the <code>Print &amp; Export Wizard</code> dialog opens, click the <code>all</code> selector above the <code>Groups</code> listing,
+and click the <code>all</code> selector above the <code>Fields</code> listing.
+Under the <code>Output format</code>, select the <code>XML - export database</code> option.
+You may ignore the <code>Sort by</code> pulldown.
+Click <code>Next</code> to continue.
+When the <code>Save As</code> dialog appears, click the <code>Browse</code> button, navigate to your <strong>Desktop</strong>, and save the file
+to your Desktop with the name <strong>pm_export.xml</strong>.
+When the export has completed, close the wizard.</p>
+
+<p>You may now quit Password Agent.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="passwordboss">Password Boss</h3>
+
+<p><em>Converter name:</em> <strong>passwordboss</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 5.5.577 db49 rel: 44</li>
+<li><strong>Windows</strong>: Initially tested with version 5.5.4747.0</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Password Boss JSON data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch the desktop version of Password Boss.
+You will export your Password Boss data as unencrypted <strong>JSON</strong> data.</p>
+
+<p>Under the <code>File &gt; Export data</code> menu, select the <code>Password Boss JSON - not encrypted ...</code> menu item.
+When the <code>Password Boss</code> export dialog appears, navigate to your Desktop folder,
+and save the file with the name <strong>pm_export.json</strong> to your Desktop.
+Click <code>OK</code> when the confirmation dialog appears.</p>
+
+<p>You may now quit Password Boss.</p>
+
+<h4 id="options">Options</h4>
+
+<p>The <code>--appendsubtitle</code> option will append any subtitle value onto the end of the item's title.
+This can make similarly named titles less ambiguous. The subtitle value is set by Password Boss on export,
+and will typically contain a record's most disambiguating field.
+Without this option, the subtitle field will go to the notes area.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>Password Boss employs several Personal Identity categories (Address, Company, Email, Name, Phone),
+whereas 1Password stores this information in a single Identity record.
+The Password Boss export contains no information linking these records together, so the converter
+must treat them as independent items. The converter will create an Identify record for each
+Personal Identity &gt; Name record found.
+But the other Personal Identity types will be placed in Secure Notes, where you may copy / paste the
+values stored in the Notes section to the relevant fields in the corresponding Identity record.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="passworddepot">Password Depot</h3>
+
+<p><em>Converter name:</em> <strong>passworddepot</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 9.1.3</li>
+<li><strong>Windows</strong>: Initially tested with version 8.1.1</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Password Depot data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Password Depot.</p>
+
+<p><strong>macOS</strong>: Select the <code>File &gt; Export</code> menu item.
+Enter your master password in the dialog when asked, and press <code>OK</code>.
+Leave the <code>Export Format</code> as <code>Password Depot XML Format *.xml</code>.
+Click the <code>...</code> icon at the far right of the <code>Target File</code> area, navigate to your <strong>Desktop</strong> folder, and set the <code>Save As</code> name
+to <strong>pm_export.xml</strong>.
+Click <code>Continue</code>, and then click <code>Close</code>.
+Your XML text export file with the name you provided above is now on your Desktop.</p>
+
+<p><strong>Windows</strong>: On the left side, select your password file's name (or the highest level folder you want to export).
+Select the <code>Tools</code> ribbon menu item, click the <code>Export</code> button, and select the <code>Export Wizard</code> item.
+Enter your Password Depot password when the dialog appears, and press <code>OK</code>.
+The <code>Export format</code> should be left as <code>Extensible Markup Language format (*.xml)</code>.
+Click the <code>Browse</code> button, navigate to your <strong>Desktop</strong> folder and in the <code>File name</code> area, enter the name <strong>pm_export.xml</strong>.
+Be sure the <code>Original folder</code> pulldown has the top-level folder you want exported (the top level is the entire contents of the password file).
+Click <code>Next</code> to complete the export and then click <code>Finish</code> to close out the wizard.
+Your XML text export file with the name you provided above is now on your Desktop.</p>
+
+<p>You may now quit Password Depot.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>Password Depot supports formatted text in Information items on Windows.
+It does not, however, export this formatting information - only the raw text is exported.</p>
+
+<p>Password Depot does not export your attachments.
+Be sure to save them from within Password Depot before you remove it from your system.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="passwordsafe">Password Safe</h3>
+
+<p><em>Converter name:</em> <strong>passwordsafe</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 3.xx</li>
+<li><strong>Windows</strong>: Initially tested with version 3.38</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Password Safe data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Password Safe.</p>
+
+<p>Export its database to an XML file using the <code>File &gt; Export To... &gt; XML Format...</code> menu item.
+Enter your password in the <code>Current Safe Combination</code> area.
+Click the <code>Export file</code> button to the right of the path entry area, navigate to your <strong>Desktop</strong> folder,
+enter the name <strong>pm_export.xml</strong> in the <code>File name</code> field in the dialog, and click the <code>Save</code> button.
+Finally, click the <code>Export XML</code> button to create the export file on your Desktop.
+Click the <code>Finish</code> button to close the export dialog.</p>
+
+<p>You may now quit Password Safe.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="passwordsplus">Passwords Plus</h3>
+
+<p><em>Converter name:</em> <strong>passwordsplus</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 3.0020</li>
+<li><strong>Windows</strong>: Initially tested with version 3.0.1 (232)</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Passwords Plus data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Passwords Plus.</p>
+
+<p><strong>macOS</strong>: Export its database to a file using the <code>Tools &gt; Export</code> menu item.
+Click the <code>Select Location</code> button, and enter the name <strong>pm_export.csv</strong> in the <code>Save As</code> area of the dialog,
+and click the <code>Where</code> button to navigate to your <strong>Desktop</strong> folder.
+Click the <code>Save</code> button, then click the <code>Export</code> button in the original dialog, and click the <code>OK</code> button when the final dialog appears.</p>
+
+<p><strong>Windows</strong>: Export its database to a file using the <code>File &gt; Export ...</code> menu.
+Click <code>OK</code> to acknowledge that your data will be exported in an unencrypted format.
+Navigate to your <strong>Desktop</strong> folder, enter the name <strong>pm_export.csv</strong> in the <code>File Name</code> area of the dialog, and click <code>Save</code>.</p>
+
+<p>You may now quit Passwords Plus.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>This converter supports cross-platform conversion (the export may be exported on one platform, but converted on another).</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="passwordwallet">PasswordWallet</h3>
+
+<p><em>Converter name:</em> <strong>passwordwallet</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 4.8.1 (6095)</li>
+<li><strong>Windows</strong>: Initially tested with version 4.8.1 (1147)</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported PasswordWallet data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch PasswordWallet.</p>
+
+<p>Export its database as a text file using the <code>File &gt; Export &gt; Visible entries to text file...</code> menu.
+Enter the wallet's password when the password dialog appears.
+Navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export.txt</strong> to your Desktop.</p>
+
+<p>You may now quit PasswordWallet.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="roboform">RoboForm</h3>
+
+<p><em>Converter name:</em> <strong>roboform</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 1.95</li>
+<li><strong>Windows</strong>: Initially tested with version 6.9.99 (see Notes)</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your RoboForm Passcards/Logins, Identities, and Safenotes data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch RoboForm (macOS) or the Roboform Editor (Windows).</p>
+
+<p>Roboform requires three separate exports, one export for each of Logins + Bookmarks + Passcards, Identities, and Safenotes.
+This converter can convert all of these exports at the same time.
+Roboform version 8 on Windows and macOS supports exporting your Logins + Bookmarks to a CSV format.
+Version 8.5.9 added Safenote export via CSV.
+As this is a more robust export format, use it to export this data.
+Identities and Safenotes (prior to 8.5.9) can only be exported via Roboform's Print List function.</p>
+
+<p>Export your Roboform data according to your platform and Roboform version as follows:</p>
+
+<p><strong>Widows RoboForm 8</strong>: To export your Logins + Bookmarks, click the <code>RoboForm</code> pulldown menu at the top left
+of the editor, and select <code>Options...</code>.
+Select <code>Account &amp; Data</code>, and press the <code>Export</code> button.
+Select the highest level of data you wish to export, and set the <code>Format</code> to <code>CSV file</code>.
+Click the <code>Browse</code> button, and navigate to your <strong>Desktop</strong>.
+Set the file name to be <strong>pm_export_logins.csv</strong>, and click the <code>Save</code> button.
+Roboform 8.5.9 allows you to select the items to export (Logins, Bookmarks, Safenotes) - select the data types you want exported.
+Click the <code>Export</code> button now, and click the <code>Yes</code> button to acknowledge the confirmation dialog.
+After the export has completed, click the export dialog's <code>Close</code> button.</p>
+
+<p>To export your Identities or Safenotes (prior to version 8.5.9), click the <code>RoboForm</code> pulldown menu at the top left of the editor,
+and select <code>Print List &gt; Identities</code> or
+<code>Print List &gt; Safenotes</code>
+Enter your master password when prompted.
+When the print dialog appears, click the <code>Save</code> button.
+Navigate to your <strong>Desktop</strong> folder, and save the file with either the name <strong>pm_export_identities.html</strong> or
+<strong>pm_export_safenotes.html</strong>, depending upon which type of data you exported.
+Save this export file to your Desktop.
+You can do likewise for the other export type if you wish.</p>
+
+<p><strong>Windows RoboForm 7</strong>: Click the green <code>RoboForm</code> button in the upper left of the dialog, and select <code>Print List... &gt; Logins</code>.
+Enter your master password when prompted.
+When the print dialog appears, click the <code>Save</code> button.
+Navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export_logins.html</strong> to your Desktop.</p>
+
+<p>You may export your Identities and Safenotes now, using the same procedure, but using a different file name such as
+<strong>pm_export_identities.html</strong> and <strong>pm_export_safenotes.html</strong>, respectively.</p>
+
+<p><strong>Windows RoboForm 6</strong>: Use the Passcard Editor's <code>Passcard &gt; Print List...</code> menu item.
+When the <code>Roboform Passcards List</code> dialog appears, select <code>Passcards</code> from the pulldown at the top of the dialog,
+and enable the <code>Full URL</code> checkbox.
+Click the <code>Save</code> button.
+Navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export_logins.html</strong> to your Desktop.</p>
+
+<p>You may export your Identities and Safenotes now, using the same procedure, but using a different file name such as
+<strong>pm_export_identities.html</strong> and <strong>pm_export_safenotes.html</strong>, respectively.</p>
+
+<p><strong>macoS Roboform 8</strong>: Use the <code>File &gt; Export</code> menu.
+Set the <code>Format</code> at the bottom of the dialog to <code>CSV file</code>.
+Select the highest level of data you wish to export, and set the <code>Format</code> to <code>CSV file</code>.
+Click the <code>Browse</code> button, and navigate to your <strong>Desktop</strong>.
+Set the file name to be <strong>pm_export_logins.csv</strong>, and click the <code>Select folder for export</code> button.
+Click the <code>Export</code> button now, and click the <code>Yes</code> button to acknowledge the confirmation dialog.
+After the export has completed, click the export dialog's <code>Close</code> button.</p>
+
+<p>To export your Identities and Safenotes, follow the basic procedure below for versions prior to 8.</p>
+
+<p><strong>macOS Roboform &lt; version 8</strong>: Use the <code>File &gt; Print List...</code> menu and select <code>Logins</code>.
+RoboForm will save a file to your Desktop that begins with the name <strong>RoboForm Logins</strong> and ends with today's date.
+This is your conversion file - you may rename it to a simpler <strong>pm_export_logins.html</strong>.</p>
+
+<p>You may export your Identities and Safenotes now, using the same procedure, but using a different file name such as
+<strong>pm_export_identities.html</strong> and <strong>pm_export_safenotes.html</strong>, respectively.</p>
+
+<p>You may now quit RoboForm.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>This converter can convert one or more export files at once, so you may specify each of the files you exported above on the same command line.
+Example:</p>
+
+<pre><code>perl convert.pl roboform -v pm_export_logins.html pm_export_identities.html pm_export_safenotes.html
+</code></pre>
+
+<p>The command above will convert all three export files into a single 1PIF file containing your converted Passcards/Logins, Identity items, and Safenotes.</p>
+
+<p>RoboForm version 7 does not export the full original URL for Login items.
+You will probably need to edit some login entries within 1Password to make Open and Fill work correctly.</p>
+
+<p>When using the Print List export format for Logins, the username and password values depend on the original names used on the web
+page's form data.
+Roboform exports these labels, and the converter uses prioritized pattern matching to determine which of these fields maps to the
+username and the password.
+The patterns may need adjustment to better match your data.
+It is beyond the scope of these instructions to describe the process.
+See the comments in the Roboform.pm converter module, or ask for help.</p>
+
+<p>Roboform does not export the &quot;Login Tip&quot; in a CSV export.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="safeincloud">Safe in Cloud</h3>
+
+<p><em>Converter name:</em> <strong>safeincloud</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 1.6</li>
+<li><strong>Windows</strong>: Initially tested with version 2.8</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Safe in Cloud data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Safe in Cloud.</p>
+
+<p>Export its database to an XML file using the <code>File &gt; Export &gt; As XML</code> menu.
+Navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export.txt</strong> to your Desktop.</p>
+
+<p>You may now quit Safe in Cloud.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="safewallet">SafeWallet</h3>
+
+<p><em>Converter name:</em> <strong>safewallet</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 1.2</li>
+<li><strong>Windows</strong>: Initially tested with version 2.4.1.2, 3.0.7</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported SafeWallet data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch SafeWallet.</p>
+
+<p><strong>macOS</strong>: Export its database to an XML file using the <code>File &gt; Export...</code> menu.
+Select the <code>XML</code> tab, and click <code>Export</code>.
+Navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export.txt</strong> to your Desktop.</p>
+
+<p><strong>Windows</strong>: Export its database to an XML file using the <code>File &gt; Export Wallet</code> menu.
+Select the <code>Export to XML file</code> button, and click <code>Next</code>.
+Click the <code>Browse button</code>.
+Navigate to your <strong>Desktop</strong> folder, and save the file with the name <strong>pm_export.txt</strong> to your Desktop.
+Click the <code>Finish</code> button and press <code>OK</code> when the successful export dialog appears.</p>
+
+<p>You may now quit SafeWallet.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="spbwallet">SPB Wallet</h3>
+
+<p><em>Converter name:</em> <strong>spbwallet</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: N/A</li>
+<li><strong>Windows</strong>: Initially tested with version 2.1.2 (12118)</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Decrypts and converts your SPB Wallet data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>There is no need to export any data from SPB Wallet.
+The converter will read and decrypt the data directly from the SPB Wallet <strong>.swl</strong> file.
+On the command line, provide the path to your .swl file as the file name to convert.</p>
+
+<p>It might be easier if you move your .swl wallet file to your Desktop, and then you can
+refer to it on the command line using the relative path such as <em>..\name_of_your_spbwallet_file.swl</em>.
+If you prefer not to move this .swl file, on the command line, you will need to specify a valid path to your wallet file.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="splashidsafe">SplashID Safe</h3>
+
+<p><em>Converter name:</em> <strong>splashid</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 7.2.2 (but requires &lt; 8.0.4.899)</li>
+<li><strong>Windows</strong>: Initially tested with version 7.2.4</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported SplashID Safe data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch SplashID Safe.</p>
+
+<p>Export its database to a <strong>vID</strong> file using the <code>File &gt; Export &gt; SplashID vID</code> menu (do <em>not</em> choose SplashID vID3).
+Navigate to your <strong>Desktop</strong> folder, and in the <code>Save As</code> area, enter the file name <strong>pm_export</strong>.
+At the bottom of the dialog, select <code>Export All Records</code> and deselect <code>Export Attachments</code>.
+Click <code>Save</code>.
+When the <code>Set Password</code> dialog appears, click <code>OK</code> (do <em>not</em> enter a password).
+Your exported file will be on your Desktop with the name <strong>pm_export.vld</strong>.</p>
+
+<p>You may now quit SplashID Safe.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p><strong>macOS</strong>: To export your data from SplashID on a Mac, you must use SplashID 8.0.4.899 or earlier.
+Later versions of SplashID 8 will save <em>encrypted</em> data, and the converter cannot decrypt this data.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="stickypassword">Sticky Password</h3>
+
+<p><em>Converter name:</em> <strong>stickypassword</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: N/A (export is an ambiguously-structured text dump)</li>
+<li><strong>Windows</strong>: Initially tested with version 8.0.6.145</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Sticky Password data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Sticky Password.</p>
+
+<p>Export its database to an XML file using the <code>Menu</code> pulldown in the upper right corner of the user interface.
+Select the <code>Export</code> menu item, and then select the <code>Export All</code> item.
+On the next dialog screen, select <code>Sticky Password 6 XML</code> and click <code>Next</code>.
+Select <code>Save to file</code>.
+On the next dialog screen, navigate to your <strong>Desktop</strong> folder, and in the <code>File name</code> area, enter the file name <strong>pm_export</strong>.
+Click the <code>Save</code> button.
+Your export file will be on your Desktop with the name <strong>pm_export.xml</strong>.</p>
+
+<p>You may now quit Sticky Password.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="truekey">True Key</h3>
+
+<p><em>Converter name:</em> <strong>truekey</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version 1.12.0</li>
+<li><strong>Windows</strong>: Untested</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported True Key data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch True Key.</p>
+
+<p>Export its login items as a text file using the settings gear icon in the upper right corner of the user interface.
+Select <code>App Settings</code> below that, and click the <code>Export</code> button in the <code>Export Data</code> section of the settings at the bottom of the list.
+Click <code>Continue</code> when the export warning dialog is presented, enter your master password when prompted, and click the <code>Unlock</code> button.
+When the <code>Save</code> dialog appears, navigate to your <strong>Desktop</strong> folder, and in the <code>Save As</code> area, enter the file name <strong>pm_export</strong>.
+Click the <code>Save</code> button.
+After exporting the data, your file will be named <strong>pm_export.csv</strong> or <strong>pm_export.json</strong>, depending on your version of True Key.</p>
+
+<p>You may now quit True Key.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>This converter supports cross-platform conversion (the export may be exported on one platform, but converted on another).</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="textfilestosecurenotes">Text Files (to Secure Notes)</h3>
+
+<p><em>Converter name:</em> <strong>txt2notes</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: All OS versions supported by the converter suite</li>
+<li><strong>Windows</strong>: All OS versions supported by the converter suite</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts one or more text files from your system to 1PIF for 1Password import as Secure Notes.
+Your files are not modified.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>You may supply one or more file paths on the converter command line.
+If you supply a directory name, its contents will be converted.
+Sub-directories will be ignored unless you supply the <code>--recurse</code> option.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>The <code>--keepempty</code> option prevents suppressing notes with empty bodies.
+This can be useful if a note's title contains the meaningful data.</p>
+
+<p>The <code>--titlefilter</code> option allows supplying a Perl expression to modify a note's title.
+For example, --filtertitle &quot;s/\.txt$//&quot; would remove the suffix &quot;.txt&quot; from the title.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="vcardfromcontacts">vCard (from Contacts)</h3>
+
+<p><em>Converter name:</em> <strong>vcard</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Initially tested with version macOS 10.10.3</li>
+<li><strong>Windows</strong>: Untested</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts macOS or iCloud Contacts vCard exports to 1PIF for 1Password import.
+The contact data can be placed into 1Password's Identity or Secure Notes category.
+The default is the Identity category.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p><strong>macOS Contacts</strong>: To export from macOS Contacts, launch the macOS <strong>Contacts</strong> app, select the desired contacts,
+and export them to a vCard file using the <code>File &gt; Export... &gt; Export vCard...</code> menu.
+Navigate to your <strong>Desktop</strong> folder, and in the <code>Save As</code> area, enter the file name
+<strong>pm_export</strong>. Click <code>Save</code>
+The exported vCard file will be on your Desktop with the name <strong>pm_export.vcf</strong>.
+You may now quit Contacts.</p>
+
+<p><strong>iCloud Contacts</strong>: To export from Contacts on iCloud, launch <strong>Safari</strong>, and log into your iCloud account.
+Click the <code>Contacts</code> icon.
+Select one or more contacts from the list (you can click on a single contact and then use ⌘ + A to select all contacts).
+Click the gear icon at the bottom left of the browser window, and select <code>Export vCard...</code>.
+Safari will create a new <strong>.vcf</strong> file in your Downloads folder.
+It will also prompt you to import your items into Contacts - you probably want to deny this by hitting the <code>Cancel</code> button.
+You may now log out of your browser's iCloud session, or just quit Safari, or close the page.
+Move the newly created .vcf file onto your Desktop, and convert this file.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>To place items into Secure Notes, use the <code>--securenote</code> option.</p>
+
+<p>The <code>--icon</code> option will cause the converter to import the vCard's icon, provided that either of the GD or ImageMagick Perl libraries is installed.</p>
+
+<p>Although this is a generic vCard converter, the format is complex, and this converter has only been tested with the macOS or iCloud Contacts.
+Additional support can be requested - see <a href="https://discussions.agilebits.com/discussion/101691/moving-to-1password-from-another-password-manager-mac/p1">this forum post</a>.</p>
+
+<h4 id="seealso">See Also</h4>
+
+<p>Here are <a href="https://discussions.agilebits.com/discussion/comment/252308/#Comment_252308">several examples</a>.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="subsemblywallet4x4w">Subsembly Wallet 4X/4W</h3>
+
+<p><em>Converter name:</em> <strong>wallet4</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: Untested</li>
+<li><strong>Windows</strong>: Initially tested with version 4.5.0.5095</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Subsembly Wallet 4X/4W data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Wallet 4</p>
+
+<p>Export its database as an HTML file using the <code>Wallet &gt; Export HTML...</code> menu.
+Navigate to your <strong>Desktop</strong> folder, and in the <code>Save As</code> area, enter the file name <strong>pm_export</strong>.
+Click <code>Save</code>.
+Your exported data file will be on the Desktop with the name <strong>pm_export.html</strong>.</p>
+
+<p>You may now quit Wallet 4.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>Wallet 4 does not export attached files or images, so they are not available to the converter.
+Be sure to export your files from Wallet 4 before you remove it from your system.</p>
+
+<p>Any Files or Pictures item in Wallet 4 will be imported as a 1Password Secure Note.
+It will contain a reference to the original file name in the Notes section.</p>
+
+<p>Favorites will not be retained.
+Wallet 4 does not export unique references between an item and the list of favorites.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+<h3 id="yojimbo">Yojimbo</h3>
+
+<p><em>Converter name:</em> <strong>yojimbo</strong></p>
+
+<h4 id="platforms">Platforms</h4>
+
+<ul>
+<li><strong>macOS</strong>: 4.04</li>
+<li><strong>Windows</strong>: N/A</li>
+</ul>
+
+<h4 id="description">Description</h4>
+
+<p>Converts your exported Yojimbo data to 1PIF for 1Password import.</p>
+
+<h4 id="instructions">Instructions</h4>
+
+<p>Launch Yojimbo.</p>
+
+<p>Select the <code>Library</code> sidebar area, and select all of the entries you want exported.
+Export the selected items using the <code>File &gt; Export...</code> menu.
+In the <code>Open</code> dialog, navigate to your <strong>Desktop</strong> folder, and click the <code>New Folder</code> button at the bottom left of the dialog.
+Enter the folder name <strong>pm_export</strong>, click <code>Create</code>, and then click the <code>Choose</code> button.
+Use the folder name you supplied above on the command line.</p>
+
+<p>You may now quit Yojimbo.</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>By default, Serial Number entries are assigned to 1Password's Software License category.
+You may use the option <code>--serial2note</code> to force them into the Secure Note category. </p>
+
+<p>The converter will ignore <strong>image</strong> and <strong>web archive</strong> types.</p>
+
+<p>Formatted notes will be converted into plain text.</p>
+
+<p>The converter cannot decrypt encrypted items.
+Be sure your items are decrypted prior to export.</p>
+
+<p>Yojimbo does not export a record's <strong>Tags</strong>, <strong>Flagged</strong> status, <strong>Labels</strong>, or <strong>Collections</strong>.
+And for some types, it does not export the entry's <strong>Comments</strong>.</p>
+
+<p>Next, go to step <a href="#step2"><strong>2. Convert</strong></a>.</p>
+<hr />
+
+<h2 id="step2">2. Convert</h2>
+
+<p><strong>FYI</strong>: The converter does not modify your password manager's data, nor transmit your data across the network.</p>
+
+<p>It is time to convert - click on the name of your OS:</p>
+
+<ul>
+<li><p><a href="#step2macos">macOS</a></p></li>
+<li><p><a href="#step2windows">Windows</a></p></li>
+</ul>
+
+<h3 id="step2macos">macOS</h3>
+
+<p>You may use either of the following two methods:</p>
+
+<ol>
+<li><p>Use the <strong>macOSConvertHelper</strong> to create the conversion command for you.
+This method may be easier for some, but macOS will request that you grant the app permission (see below).</p></li>
+<li><p>Manually type the conversion command into Terminal. This method is best if you are going to perform multiple conversions.</p></li>
+</ol>
+
+<h4 id="method1%3Ausingthemacosconverthelper">Method 1: Using the macOSConvertHelper</h4>
+
+<p>Double-click the <strong>macOSConvertHelper</strong> app, or drag your exported data file <em>onto</em> the app.
+Follow the on-screen instructions.</p>
+
+<p>You may get some error / warning dialogs - this is macOS' Gatekeeper being cautious, in case you were not expecting this activity.
+Here's what to do:</p>
+
+<ul>
+<li><p>If you get the macOS error dialog with the message <em>&quot;App can’t be opened because it is from an unidentified developer&quot;</em>,
+click <code>OK</code>, and instead, right-click the macOSConvertHelper app and select <code>Open</code>.</p></li>
+<li><p>On macOS Mojave and later, if you get a dialog with the message <em>&quot;macOSConvertHelper&quot; wants access to control &quot;Terminal&quot;...</em> -
+click <code>OK</code> to allow macOSConvertHelper to issue its converter command in the Terminal app.</p></li>
+<li><p>On macOS Catalina, you may receive additional dialogs asking for certain permissions.
+You will need to grant these to allow the script to run.</p></li>
+</ul>
+
+<p>After you've selected your converter, and entered any options, a Terminal window will open to run the conversion,
+show you the status of the conversion, and the location of the generated 1PIF file.
+You may <code>Quit</code> the Terminal application after the conversion.</p>
+
+<h4 id="method2%3Amanuallyenteringthecommandline">Method 2: Manually entering the command line</h4>
+
+<p>Launch the <strong>Terminal</strong> app (or your preferred terminal emulator),
+and change the current direction by issuing the following command in <strong>Terminal</strong>:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+cd ~/Desktop/mrc-converter-suite
+</pre>
+</div>
+
+
+<p>and hit Return.</p>
+
+<p>The conversion command takes the form:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+perl convert.pl <i>&lt;options&gt;</i> <i>&lt;converter_name&gt;</i> <i>&lt;export_file&gt;</i>
+</pre>
+</div>
+
+
+<p>where <em>&lt;converter_name&gt;</em> is the name of the specific converter you want to use, and <em>&lt;export_file&gt;</em> is the path to your export file.
+For <em>&lt;options&gt;</em>, you generally always want to use at least <code>-v</code> for verbose output (see also <a href="#options">Options</a>).
+For example, if you exported data from Enpass, and your export file is on your Desktop named <strong>pm_export.json</strong>,
+the command to enter is:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+perl convert.pl -v enpass ~/Desktop/pm_export.json
+</pre>
+</div>
+
+
+<p>Hit Return after you've typed the command, and the conversion will proceed.
+If you need to see the more information about how to use <strong>convert.pl</strong>, and the options it supports, issue the command:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+perl convert.pl --help
+</pre>
+</div>
+
+
+<p>See also the <a href="#optionhelp">Option --help</a> section.</p>
+
+<p>When you are done converting, you are ready for step <a href="#step3">3. Import into 1Password</a>.</p>
+
+<h3 id="step2windows">Windows</h3>
+
+<p>You are almost ready to convert your data.
+Windows users have a little more work to do first.
+Sorry about that.
+You'll need to (temporarily) install the free, widely-used <a href="http://strawberryperl.com/">Strawberry Perl</a>.
+Download the <strong>Recommended version</strong>, and, install it.
+It will take a few minutes.</p>
+
+<p>After Strawberry Perl is installed, click the Windows Start menu, and click in the Search
+area (Windows 10: <code>Type here to search</code>; Windows 7 <code>Search programs and files</code>).
+Type <code>cmd</code> in the Search area, and then press Return, to Launch a Windows command shell.
+The steps below are to be typed in the command shell window.
+Press the Return key after you enter a command to execute it.</p>
+
+<p>It was suggested that you place the mrc-converter-suite folder on your Desktop (make sure it is there, or you'll need to adjust
+the commands below).
+You need to tell the command shell to go there now.</p>
+
+<p>If your user profile is <em>not</em> on the C: drive, type your drive <em>letter</em> followed by a <strong>:</strong> (colon).
+For example, if your drive is <strong>E:</strong>, type <code>E:</code> and hit Return.</p>
+
+<p>Copy and paste the command below, or enter it manually:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+cd %USERPROFILE%\Desktop\mrc-converter-suite
+</pre>
+</div>
+
+
+<p>The converter needs a few extra Perl modules.
+Copy and paste the command below, or enter it manually:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+install_modules.bat
+</pre>
+</div>
+
+
+<p>This will take a few minutes to download, compile, and install the modules.
+You need admin privileges to do this.</p>
+
+<p>Now, you are <em>finally</em> ready to convert!</p>
+
+<p>The conversion command takes the form:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+perl convert.pl <i>&lt;options&gt;</i> <i>&lt;converter_name&gt;</i> <i>&lt;export_file&gt;</i>
+</pre>
+</div>
+
+
+<p>where <em>&lt;converter_name&gt;</em> is the name of the specific converter you want to use, and <em>&lt;export_file&gt;</em> is the path to your export file.
+For <em>&lt;options&gt;</em>, you generally always want to use at least <code>-v</code> for verbose output (see also <a href="#options">Options</a>).
+For example, if you exported data from Enpass, and your export file is on your Desktop named <strong>pm_export.json</strong>,
+the command to enter is:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+perl convert.pl -v enpass ..\pm_export.json
+</pre>
+</div>
+
+
+<p>The conversion will proceed.
+If you need to see the more information about how to use <strong>convert.pl</strong>, and the options it supports, issue the command:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+perl convert.pl --help
+</pre>
+</div>
+
+
+<p>See also the <a href="#optionhelp">Option --help</a> section.</p>
+
+<p>When you are done converting, you are ready for step <a href="#step3">3. Import into 1Password</a>.</p>
+
+<h2 id="step3">3. Import into 1Password</h2>
+
+<p>After a successful conversion, there will be a file on your Desktop named <strong>1P_import.1pif</strong> (the <strong>onepif</strong> converter differs, see Note below).
+The 1P_import.1pif file can now be imported into a desktop version of 1Password.
+Open your 1Password desktop app.
+The import procedure varies slightly in each 1Password version:</p>
+
+<ul>
+<li><p><strong>macOS</strong>: The easiest way to import the 1P_import.1pif file is to first select the vault where you will import (if you have multiple vaults),
+and then drag the 1P_import.1pif onto the 1Password icon on the macOS dock.
+Alternatively, you can use the <code>File &gt; Import</code> menu.
+In 1Password 7, when the <code>Import</code> dialog appears, select <code>Other</code> and then select <code>Import a 1PIF file</code>.</p></li>
+<li><p><strong>Windows</strong>: In 1Password 7, select the <code>1Password &gt; Import</code> menu item and follow the on-screen instructions to
+import the 1P_import.1pif file.</p></li>
+</ul>
+
+<p>After importing, you should now have new items in 1Password.
+These items may require some clean-up, for various reasons.
+It is time to finish this conversion process with step <a href="#step4">4. Cleanup</a>.</p>
+
+<p><strong>Note</strong>: If you used the <strong>onepif</strong> converter,
+the files created are named <strong>1P_converted.html</strong> or <strong>1P_converted.csv</strong> (depending on which export formatter you used).</p>
+
+<h2 id="step4">4. Cleanup</h2>
+
+<p>It is a very good idea to remove your <em>unencrypted</em> export and the resulting 1PIF data files as soon as possible.</p>
+
+<p>But before you do this, take a quick look through the results of the import.
+If you are satisfied, securely remove any unencrypted files now (the converter-created files / directories have names such as 1P_import.1pif,
+1P_converted.html, 1P_converted.csv, and 1P_Attachments.</p>
+
+<p>If you are not satisfied, review the sections below, to gain a better understand about what happens during the conversion.</p>
+
+<p>When you are done with your conversion(s), you may delete the mrc-converter-suite,
+and Windows users may uninstall Strawberry Perl.</p>
+
+<h3 id="datamapping">Data Mapping</h3>
+
+<p>Some of your previous password manager's categories and fields may not directly translate into those available in 1Password.
+And some values cannot map unambiguously, or be safely converted, into 1Password fields.
+There are some basic rules for how the converter handles these situations.
+For any given item:</p>
+
+<ol>
+<li><p>If there is no natural or reasonable 1Password category match, it will become a Secure Note.</p></li>
+<li><p>If the converter cannot determine the category, it will become a Secure Note.</p></li>
+<li><p>If a field has better utility in 1Password when placed into a different category,
+then the item will be split and the field will go into the category better suited for its purpose.
+See <a href="#recordsplitting">Record Splitting</a> below.</p></li>
+<li><p>If a field cannot be placed into one of the resulting target categories, it will be placed into either a custom section/field,
+or will be added to the item's Notes area as a Field: Value pair.</p></li>
+</ol>
+
+<h3 id="recordsplitting">Record Splitting</h3>
+
+<p>1Password has a particular working paradigm, so the converter tries to place an item into the category with the most utility.
+To do this, a single item from your password manager may be <em>split</em> into multiple 1Password items, each a different category.
+For example, a single form fill profile item from a particular password manager can result in four separate 1Password items, one item created for
+the primary matched category such as <em>Identity</em>, and three secondary items such as <em>Credit Card</em>, <em>Bank Account</em>, and
+<em>Social Security Number</em>.</p>
+
+<p>When a field matches a known field, but it cannot be placed into a 1Password field, for any reason,
+it will be placed into the primary items's Notes area.</p>
+
+<p>When a field is unknown, it will be placed into the Notes areas for <em>both</em> the primary and secondary items.
+This allows you to easily examine and edit the items resulting from the split to decide where you want the Field: Value pair.</p>
+
+<h3 id="datefields">Date Fields</h3>
+
+<p>Some password managers provide no input validation for date fields, and their date values are non-validated simple text.
+They allow, for example, entry of nonsense dates such as <em>Feb 31, 2015</em>, <em>Tomorrow</em> or <em>Take out the garbage</em>.
+1Password dates are strict, so date validation is performed by the converter where sensible.
+When a date field can be arbitrary text, or is not validated by the password manager,
+the converter will not interpret the field, and it will be placed into the Notes section.</p>
+
+<p>Some 1Password date fields are only stored as month / year values.
+If conversion of a date would result in a loss of information (e.g. when the date value also contains a day component),
+the converter will both store the 1Password-appropriate date, and also store the original value in an item's Notes section.</p>
+
+<p>When an invalid date is detected, it is stored in the Notes section.</p>
+
+<p>Some password managers export no century component to their date's year values.
+The converter employs a strategy, depending upon the particular date field, to default to a sensible century value.
+For example, a <em>Valid From</em> date of 12/03 is almost certainly 12/2003 rather than 12/1903,
+and if today were Oct 9th, 2014, a birthdate of 11/14 cannot be 11/2014.</p>
+
+<h3 id="groupstagsandotherindicators">Groups, Tags, and Other Indicators</h3>
+
+<p>Some password management programs allow placement of items into groups or folders (flat or hierarchical).
+When available in the export, these will be recreated as <code>/</code> (forward slash) separated lists of 1Password Tags.
+With the <code>--folders</code> option, and for versions of 1Password that support Folders, items will also be placed into the
+appropriately named 1Password Folder.</p>
+
+<p><strong>Note</strong>: Older versions of the 1Password for Windows do not show Tag values in the main UI.
+The Tags do exist in the items, however, and can be seen in the Tags section when editing an item.</p>
+
+<p>Likewise, any tags, favorite or star markers, when available for an item, will become 1Password Tags.</p>
+
+<p>Finally, other esoteric password manager-specific markers (e.g. an item's color set to <em>Blue</em>), if exported, will be placed into the
+1Password item's Notes section (e.g. Color: Blue).</p>
+
+<h3 id="attachments">Attachments</h3>
+
+<p>Some password managers support importing documents or attachments, but may not support exporting them.
+When attachments are exported, some converters will export these attachments, placing them into a <strong>1P_Attachments</strong> folder at
+the same location as the generated 1P_import.1pif file.
+The <strong>mrc-converter-suite</strong> does <em>not</em> support importing attachments into 1Password (due to some technical and usability issues).</p>
+
+<h3 id="whythingsgowrong">Why Things Go Wrong</h3>
+
+<p>Many password management programs export their data in a limited or ambiguous format.
+Problems can arise when:</p>
+
+<ul>
+<li>field labels are not present.</li>
+<li>field labels are generic or non-specific.</li>
+<li>fields are unclear or undefined.</li>
+<li>field values are invalid for the data type (e.g. non-validated garbage dates, etc.).</li>
+<li>fields with empty values are omitted from the export.</li>
+<li>non-unique field labels are used in several categories (can thwart category detection).</li>
+<li>the export format varies across platforms and/or versions.</li>
+<li>the export format is non-standard, broken, or ambiguous.</li>
+<li>record boundaries are poorly defined or ambiguous.</li>
+<li>field, category, or template customization is semantically meaningful only to the user.</li>
+<li>parts of record data is omitted, botched, or abridged.</li>
+<li>field labels, etc. are exported in mixed languages.</li>
+<li>two or more distinct field labels are translated into a single label in different language.</li>
+<li>data is repeatedly imported/exported from one password manager to another, and categories become meaningless or unidentifiable.</li>
+</ul>
+
+<p>When no category information is present, converters attempt to determine the type of item based on matching certain
+key field labels against a table of stock, known entries.
+When no field labels exist, the specific number of fields may be used.
+Some converters may use other information present in the export file to hint at the item type.</p>
+
+<p>Some password managers support customized templates, or customizing the fields of an item.
+Customized field names which are not recognized by the converter will be included in the item's Notes section as Field: Value pairs.
+When no field labels exist, generic field labels will be used, such as <strong>Field_</strong><em>#</em> (where <em>#</em> is 1, 2, ...).
+Customized items which cannot be matched against a known category will assigned to a 1Password Secure Note.</p>
+
+<h3 id="whenthingsgowrong">When Things Go Wrong</h3>
+
+<p>Each converter employs a table of input categories, and for each category a set of field definitions and special instructions or processing code.
+Field names, field positions, or certain indicators are used to match an item to a category.
+The field names in the converters are either simple strings, but more often regular expression patterns.
+These may be customized to accommodate your specific needs.
+New custom input categories may be added to the table, and this may be useful if you have many entries of that category.
+Since 1Password items cannot be moved from one category to another, it is worthwhile to get the conversion as close to your needs as possible.
+It is often possible to map custom fields to 1Password user-defined fields within an existing section, or a user-defined section.
+Please ask for more details on how this might be accomplished.</p>
+
+<h2 id="options">Command Line Options</h2>
+
+<p>This section describes the standard command line options supported by the converter.
+Options may be placed anywhere on the command line.</p>
+
+<h3 id="option%3A--addfields">Option: <code>--addfields</code></h3>
+
+<p>By default, password manager fields that do not naturally map into 1Password fields are placed into an item's Notes section as Field: Value pairs.
+The <code>--addfields</code> option will instead generate custom fields, and place them in a section named <strong>Original Fields</strong>.</p>
+
+<h3 id="option%3A--debug">Option: <code>--debug</code></h3>
+
+<p>Enables highly verbose output useful for diagnosing issues with conversion.</p>
+
+<p><strong>Caution</strong>: The output will contain sensitive information.</p>
+
+<h3 id="option%3A--imptypesand--exptypes">Option: <code>--imptypes</code> and <code>--exptypes</code></h3>
+
+<p>All of your exported items will be processed and converted to 1Password categories.
+The options <code>--imptypes</code> and <code>--exptypes</code> allow you to selectively choose which of your password manager's exported categories
+to process on import, and which categories to export to the 1PIF file, respectively.</p>
+
+<p>For example, if you only wanted eWallet's types <code>bankacct</code> and <code>votercard</code> converted, add the option <code>--imptypes bankacct,votercard</code>
+to the command line.
+And if you only wanted 1Password Secure Notes to be exported into the 1PIF file, then add the option <code>--exptypes note</code>.</p>
+
+<p>These options may result in more entries than you expect due to <a href="#recordsplitting">Record Splitting</a>.
+Take care when using <code>--exptypes</code> with categories that split.</p>
+
+<h3 id="option%3A--folders">Option: <code>--folders</code></h3>
+
+<p>The <code>--folders</code> option supports the creation of Folders in 1Password, and places your records into the same folder hierarchy as supported in your password manager. This feature is disabled by default, because the converter is unaware of existing folders in your vault.
+If you use this option, existing Folder names in the vault are ignored,
+and the converter will create new Folders, possibly with names identical to those already in your vault.
+In addition, re-running the converter and re-importing will duplicate the Folder names, since new unique folder identifiers are created each time the converter is run. For best results, import converted data only into a fresh vault.</p>
+
+<p><strong>Note</strong>: Folders are no longer supported in 1Password 7 - Tags are used instead.</p>
+
+<h3 id="optionhelp">Option: <code>--help</code></h3>
+
+<p>For usage help, use the <code>--help</code> option:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+perl convert.pl --help
+</pre>
+</div>
+
+
+<p>This shows you the list of converters, and the standard set of options:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+Usage: convert.pl <i>&lt;converter&gt;</i> <i>&lt;options&gt;</i> <i>&lt;export file&gt;</i> ...
+
+Supported Converters:
+    avastpasswords bitwarden chrome clipperz csv dataguardian datavault elpass enpass
+    essentialpim ewallet firefox fsecurekey handysafe ironkeyim kaspersky keepass2 keepassx
+    keeper keychain keyfinder lastpass licensekeeper msecure msecure5 nortonis onepif
+    passpack passwordagent passwordboss passworddepot passwordsafe passwordsplus
+    passwordwallet roboform safeincloud safewallet spbwallet splashid stickypassword truekey
+    txt2notes vcard wallet4 yojimbo
+
+Options:
+    -a or --addfields          # add non-stock fields as custom fields 
+    -d or --debug              # enable debug output
+    -e or --exptypes <i>&lt;list&gt;</i>    # comma separated list of one or more export types from list below
+    -f or --folders            # create and assign items to folders
+    -h or --help               # output help and usage text
+    -i or --imptypes <i>&lt;list&gt;</i>    # comma separated list of one or more import types from list below
+          --info <i>&lt;type&gt;</i>        # get info about converters (for helper programs)
+          --notimestamps       # do not set record modified/creation timestamps
+    -o or --outfile <i>&lt;ofile&gt;</i>    # use file named ofile.1pif as the output file
+    -t or --tags <i>&lt;list&gt;</i>        # add one or more comma-separated tags to the record
+    -v or --verbose            # output operations more verbosely
+
+Select one of the converters above and add it to the command line to see more
+complete options.  Example:
+
+    perl convert.pl ewallet --help
+</pre>
+</div>
+
+
+<p>More specific help is available when you've specified a converter.
+For example:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+perl convert.pl enpass --help
+</pre>
+</div>
+
+
+<p>tells you about the <strong>enpass</strong> converter's specific options:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+Usage: convert.pl enpass <i>&lt;options&gt;</i> <i>&lt;export file&gt;</i>
+
+Options:
+    -a or --addfields          # add non-stock fields as custom fields 
+    -d or --debug              # enable debug output
+          --dumpcats           # print the export's categories and field quantities 
+    -e or --exptypes <i>&lt;list&gt;</i>    # comma separated list of one or more export types from list below
+    -f or --folders            # create and assign items to folders
+    -h or --help               # output help and usage text
+    -i or --imptypes <i>&lt;list&gt;</i>    # comma separated list of one or more import types from list below
+          --info <i>&lt;type&gt;</i>        # get info about converters (for helper programs)
+          --notimestamps       # do not set record modified/creation timestamps
+    -o or --outfile <i>&lt;ofile&gt;</i>    # use file named ofile.1pif as the output file
+    -t or --tags <i>&lt;list&gt;</i>        # add one or more comma-separated tags to the record
+    -v or --verbose            # output operations more verbosely
+
+Supported import types:
+    bankacct combinationlock creditcard database driverslicense email flightdetail
+    frequentflyer ftp hotelreservations identity instantmsg insurance isp library loanmort
+    login membership mutualfund note other outdoorlicense passport password rewards server
+    socialsecurity software stockinvestment travellingvisa webhosting wireless
+Supported export types:
+    bankacct creditcard database driverslicense email identity insurance loanmort login
+    membership mutualfund note other outdoorlicense passport rewards server socialsecurity
+    software stockinvestment wireless
+</pre>
+</div>
+
+
+<h3 id="option%3A--notimestamps">Option: <code>--notimestamps</code></h3>
+
+<p>The converter will use your password manager's time stamps, if they exist, for record creation and record modification.
+The <code>--notimestamps</code> option disables this, allowing 1Password to set the time stamps as it creates the records (i.e. they will be set to the time
+you import the 1PIF file).</p>
+
+<p><strong>Note</strong>: The modified date used by various password managers may reflect the date the record was last updated,
+or the date the password field was last updated.
+The converter can only set the <code>last modified</code> value for the entire 1Password item, and not for any specific field within the item.</p>
+
+<p><strong>Note</strong>: Setting time stamps requires at least 1Password for Mac 5.3.BETA-17.</p>
+
+<h3 id="option%3A--tags">Option: <code>--tags</code></h3>
+
+<p>The <code>--tags</code> option will assign one or more 1Password Tags to the converted items.
+Supply one or more comma-separated tag values.
+Example <code>--tags Foo,Bar</code> or <code>--tags &quot;Joe Kerr,Sam Pull&quot;</code>.</p>
+
+<h3 id="option%3A--verbose">Option: <code>--verbose</code></h3>
+
+<p>The converter runs silently by default, unless it encounters problems.
+Verbose output provides some basic information about the number of imported and exported records, tallied per export category key,
+and the location of the generated 1PIF file.
+Some converters may produce a few additional details (such as the location of any attachments exported), or
+may request confirmation, or password credentials (if they decrypt the password database directly).</p>
+
+<p>Example:</p>
+
+
+
+
+<div style="background-color: #eeeeee; width: 95%; margin-left: auto; margin-right: auto;  padding-top: 2px; padding-bottom: 2px">
+<pre class="codeoutput" style="color: #000000; padding-top: 0px; margin: 1px 8px 1px 8px;">
+The file '_TestFiles/enpass_mac_csv' does not exist.
+</pre>
+</div>
+
+
+<h2 id="closingcomments">Closing Comments</h2>
+
+<p>The converter suite was written using Perl, a readable scripting language.
+This was done not only because it is a good cross-platform language, but more importantly, so that you can examine and audit the source code.
+This hopefully provides you with confidence that your private data is not transmitted, or used in any unintended way.
+You are free and welcome to examine the code, and to ask any questions.</p>
+
+<p>Hopefully neither this guide, nor the process, has been too intimidating.
+I fully appreciate how novel this conversion process must be for 95% of you!
+The guide tries to be hand-holding, yet comprehensive, the process as simple as possible but safe.
+When dealing with an audience of widely varying skill sets and knowledge levels,
+the challenges are not insignificant.</p>
+
+<h2 id="getmorehelp">Get More Help</h2>
+
+<p>If you have questions, problems, comments, or just want to throw stones, please create your own discussion thread in the Mac or Windows area,
+on the 1Password Support Forum, as mentioned in the
+<a href="https://discussions.agilebits.com/discussion/101691/moving-to-1password-from-another-password-manager-mac/p1">converter suite thread</a>.</p>
+
+<p>Enjoy 1Password!<br />
+-MrC</p>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>
